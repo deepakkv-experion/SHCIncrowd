@@ -1,0 +1,1485 @@
+
+Log Entry : 06-Jul-15 10:29:45 PM
+Error in SaveRequestLog: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+__________________________
+
+Log Entry : 06-Jul-15 10:29:45 PM
+Error in SaveProject: 0
+__________________________
+
+Log Entry : 06-Jul-15 10:30:00 PM
+Error in SaveProject: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+__________________________
+
+Log Entry : 06-Jul-15 10:30:28 PM
+Error in SaveRequestLog: Login failed for user 'empuser'.
+__________________________
+
+Log Entry : 06-Jul-15 10:30:30 PM
+Error in SaveProject: 0
+__________________________
+
+Log Entry : 06-Jul-15 10:30:30 PM
+Error in SaveProject: Login failed for user 'empuser'.
+__________________________
+
+Log Entry : 06-Jul-15 10:30:44 PM
+Error in SaveRequestLog: Login failed for user 'empuser'.
+__________________________
+
+Log Entry : 06-Jul-15 10:31:10 PM
+Error in SaveProject: 0
+__________________________
+
+Log Entry : 06-Jul-15 10:31:21 PM
+Error in SaveProject: Login failed for user 'empuser'.
+__________________________
+
+Log Entry : 09-Jul-15 6:26:34 PM
+ In CreateProject
+__________________________
+
+Log Entry : 09-Jul-15 6:26:36 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 09-Jul-15 6:27:04 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 09-Jul-15 6:28:22 PM
+ In CreateProject
+__________________________
+
+Log Entry : 09-Jul-15 6:28:22 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 09-Jul-15 6:28:33 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 09-Jul-15 6:29:45 PM
+Error in SaveRequestResponseLog: Could not find stored procedure 'SaveRequestResponseLog'.
+__________________________
+
+Log Entry : 09-Jul-15 6:29:45 PM
+In SaveProject: 0
+__________________________
+
+Log Entry : 09-Jul-15 6:29:46 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 09-Jul-15 6:29:46 PM
+Error in SaveRequestResponseLog: Could not find stored procedure 'SaveRequestResponseLog'.
+__________________________
+
+Log Entry : 09-Jul-15 6:31:27 PM
+ In CreateProject
+__________________________
+
+Log Entry : 09-Jul-15 6:31:27 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 09-Jul-15 6:31:43 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 09-Jul-15 6:36:29 PM
+Error in SaveRequestResponseLog: Procedure or function SaveRequestLog has too many arguments specified.
+__________________________
+
+Log Entry : 09-Jul-15 6:36:29 PM
+In SaveProject: 0
+__________________________
+
+Log Entry : 09-Jul-15 6:36:30 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 09-Jul-15 6:36:30 PM
+Error in SaveRequestResponseLog: Specified cast is not valid.
+__________________________
+
+Log Entry : 09-Jul-15 6:36:41 PM
+ In CreateProject
+__________________________
+
+Log Entry : 09-Jul-15 6:36:41 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 09-Jul-15 6:36:47 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 09-Jul-15 6:37:33 PM
+Error in SaveRequestResponseLog: Specified cast is not valid.
+__________________________
+
+Log Entry : 09-Jul-15 6:37:33 PM
+In SaveProject: 0
+__________________________
+
+Log Entry : 09-Jul-15 6:37:34 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 09-Jul-15 6:37:34 PM
+Error in SaveRequestResponseLog: Specified cast is not valid.
+__________________________
+
+Log Entry : 09-Jul-15 6:40:05 PM
+ In CreateProject
+__________________________
+
+Log Entry : 09-Jul-15 6:40:05 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 09-Jul-15 6:40:05 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 09-Jul-15 6:40:58 PM
+In SaveProject: 0
+__________________________
+
+Log Entry : 09-Jul-15 6:41:45 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 1:44:31 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 1:44:31 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 1:44:32 PM
+DefineQuery: Authorization Failed
+__________________________
+
+Log Entry : 10-Jul-15 1:44:46 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 1:47:52 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 1:47:52 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 1:47:52 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 1:47:52 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 1:47:53 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 1:48:51 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 1:48:51 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 1:48:51 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 1:48:51 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 1:48:52 PM
+Error in GenerateAndSaveQuery: Column 'QueryId' does not belong to table Table.
+__________________________
+
+Log Entry : 10-Jul-15 1:48:52 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 1:49:13 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 1:49:19 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 1:49:32 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 1:49:43 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 1:56:20 PM
+Error in GenerateAndSaveQuery: Column 'QueryId' does not belong to table Table.
+__________________________
+
+Log Entry : 10-Jul-15 1:56:20 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 1:56:32 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 1:56:32 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 1:56:32 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 1:56:32 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 1:57:09 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 2:02:59 PM
+Error in SaveRespondentList: Must declare the table variable "@RespondentsTemp".
+An expression of non-boolean type specified in a context where a condition is expected, near ')'.
+__________________________
+
+Log Entry : 10-Jul-15 2:02:59 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 2:04:22 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 2:04:22 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 2:04:23 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 2:04:23 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 2:04:54 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 2:09:00 PM
+Error in SaveRespondentList: Must declare the table variable "@RespondentsTemp".
+__________________________
+
+Log Entry : 10-Jul-15 2:09:00 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:37:25 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 3:37:25 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 3:37:25 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:37:25 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 3:37:25 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 3:37:25 PM
+Error in SaveRespondentList: Incorrect syntax near 'DataPointId'.
+__________________________
+
+Log Entry : 10-Jul-15 3:37:25 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:37:28 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 3:37:28 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 3:37:28 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:37:28 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 3:37:28 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 3:37:28 PM
+Error in SaveRespondentList: Incorrect syntax near 'DataPointId'.
+__________________________
+
+Log Entry : 10-Jul-15 3:37:28 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:38:04 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 3:38:04 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 3:38:04 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:38:04 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 3:38:15 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 3:39:58 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:40:11 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 3:40:11 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 3:40:11 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:40:11 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 3:40:13 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 3:40:14 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:41:55 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 3:41:55 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 3:41:55 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:41:55 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 3:41:56 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 3:41:56 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:42:11 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 3:42:11 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 3:42:11 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:42:11 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 3:42:11 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 3:42:11 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:42:29 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 3:42:29 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 3:42:29 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:42:29 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 3:43:00 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 3:43:00 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:43:08 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 3:43:08 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 3:43:08 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:43:08 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 3:43:09 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 3:43:09 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:43:20 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 3:43:20 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 3:43:20 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:43:20 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 3:43:21 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 3:43:21 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:43:31 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 3:43:31 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 3:43:31 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 3:43:31 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 5:19:24 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 5:19:24 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:19:30 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 5:19:30 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:19:30 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:19:30 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 5:19:30 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 5:19:30 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:20:35 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 5:20:35 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:20:35 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:20:35 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 5:20:35 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 5:20:35 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:20:47 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 5:20:47 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:20:47 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:20:47 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 5:20:47 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 5:20:47 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:29:30 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 5:29:30 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:29:30 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:29:30 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 5:29:30 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 5:29:30 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:30:00 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 5:30:00 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:30:00 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:30:00 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 5:30:00 PM
+In SaveRespondentList: 1
+__________________________
+
+Log Entry : 10-Jul-15 5:30:00 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:31:05 PM
+In DefineQuery
+__________________________
+
+Log Entry : 10-Jul-15 5:31:05 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:31:05 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:31:05 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 10-Jul-15 5:31:05 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:36:54 PM
+ In ChangeProjectStatus
+__________________________
+
+Log Entry : 10-Jul-15 5:36:54 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:36:54 PM
+ChangeProjectStatus: Invalid data
+__________________________
+
+Log Entry : 10-Jul-15 5:36:54 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:37:07 PM
+ In ChangeProjectStatus
+__________________________
+
+Log Entry : 10-Jul-15 5:37:07 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:37:07 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:37:07 PM
+In UpdateProjectStatus: 1
+__________________________
+
+Log Entry : 10-Jul-15 5:37:07 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:37:24 PM
+ In ChangeProjectStatus
+__________________________
+
+Log Entry : 10-Jul-15 5:37:24 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:37:24 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:37:24 PM
+In UpdateProjectStatus: 2
+__________________________
+
+Log Entry : 10-Jul-15 5:37:24 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:37:34 PM
+ In ChangeProjectStatus
+__________________________
+
+Log Entry : 10-Jul-15 5:37:34 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:37:34 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:37:34 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:38:45 PM
+In DeleteQuery
+__________________________
+
+Log Entry : 10-Jul-15 5:38:45 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:38:45 PM
+In DeleteQueryDetails: 1
+__________________________
+
+Log Entry : 10-Jul-15 5:38:45 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:42:39 PM
+In DeleteQuery
+__________________________
+
+Log Entry : 10-Jul-15 5:42:39 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:42:39 PM
+In DeleteQueryDetails: 1
+__________________________
+
+Log Entry : 10-Jul-15 5:42:39 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:48:33 PM
+In DeleteQuery
+__________________________
+
+Log Entry : 10-Jul-15 5:48:33 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:48:33 PM
+In DeleteQueryDetails: 3
+__________________________
+
+Log Entry : 10-Jul-15 5:48:33 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:50:16 PM
+In DeleteQuery
+__________________________
+
+Log Entry : 10-Jul-15 5:50:16 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:50:16 PM
+In DeleteQueryDetails: 16
+__________________________
+
+Log Entry : 10-Jul-15 5:50:16 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:52:17 PM
+ In UpdateProject
+__________________________
+
+Log Entry : 10-Jul-15 5:52:17 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:52:17 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:52:17 PM
+In SaveProject: 3
+__________________________
+
+Log Entry : 10-Jul-15 5:52:17 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:52:40 PM
+ In UpdateProject
+__________________________
+
+Log Entry : 10-Jul-15 5:52:40 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:52:40 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:52:40 PM
+In SaveProject: 1
+__________________________
+
+Log Entry : 10-Jul-15 5:52:40 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:52:58 PM
+ In UpdateProject
+__________________________
+
+Log Entry : 10-Jul-15 5:52:58 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:52:58 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:52:58 PM
+In SaveProject: 2
+__________________________
+
+Log Entry : 10-Jul-15 5:52:58 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:55:07 PM
+ In UpdateProject
+__________________________
+
+Log Entry : 10-Jul-15 5:55:07 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10-Jul-15 5:55:07 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10-Jul-15 5:55:07 PM
+In SaveProject: 2
+__________________________
+
+Log Entry : 10-Jul-15 5:55:07 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 15-Jul-15 4:33:33 PM
+In DefineQuery
+__________________________
+
+Log Entry : 15-Jul-15 4:33:33 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 15-Jul-15 4:33:34 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 15-Jul-15 4:33:35 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 15-Jul-15 4:33:35 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 15-Jul-15 4:33:44 PM
+In DefineQuery
+__________________________
+
+Log Entry : 15-Jul-15 4:33:44 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 15-Jul-15 4:33:44 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 15-Jul-15 4:33:44 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 15-Jul-15 4:33:44 PM
+In SaveRespondentList: 3
+__________________________
+
+Log Entry : 15-Jul-15 4:33:45 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17-Jul-15 12:45:06 PM
+In DefineQuery
+__________________________
+
+Log Entry : 17-Jul-15 12:45:06 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 17-Jul-15 12:45:07 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17-Jul-15 12:45:23 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 17-Jul-15 12:46:38 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:03:20 PM
+ In CreateProject
+__________________________
+
+Log Entry : 21-Jul-15 2:03:21 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 2:03:22 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:03:22 PM
+In SaveProject: 0
+__________________________
+
+Log Entry : 21-Jul-15 2:03:22 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:04:52 PM
+ In CreateProject
+__________________________
+
+Log Entry : 21-Jul-15 2:04:52 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 2:04:52 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:04:52 PM
+In SaveProject: 0
+__________________________
+
+Log Entry : 21-Jul-15 2:04:52 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:07:01 PM
+ In CreateProject
+__________________________
+
+Log Entry : 21-Jul-15 2:07:01 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 2:07:01 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:07:01 PM
+In SaveProject: 0
+__________________________
+
+Log Entry : 21-Jul-15 2:07:01 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:08:07 PM
+ In ChangeProjectStatus
+__________________________
+
+Log Entry : 21-Jul-15 2:08:07 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 2:08:07 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:08:07 PM
+In UpdateProjectStatus: 2
+__________________________
+
+Log Entry : 21-Jul-15 2:08:07 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:08:21 PM
+ In ChangeProjectStatus
+__________________________
+
+Log Entry : 21-Jul-15 2:08:21 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 2:08:21 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:08:21 PM
+In UpdateProjectStatus: 7
+__________________________
+
+Log Entry : 21-Jul-15 2:08:21 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:08:49 PM
+ In ChangeProjectStatus
+__________________________
+
+Log Entry : 21-Jul-15 2:08:49 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 2:08:49 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:08:49 PM
+In UpdateProjectStatus: 2
+__________________________
+
+Log Entry : 21-Jul-15 2:08:49 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:09:35 PM
+In DefineQuery
+__________________________
+
+Log Entry : 21-Jul-15 2:09:35 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 2:09:35 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:09:35 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 21-Jul-15 2:09:36 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:09:45 PM
+In DefineQuery
+__________________________
+
+Log Entry : 21-Jul-15 2:09:45 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 2:09:45 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:09:46 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 21-Jul-15 2:09:46 PM
+Error in GenerateAndSaveQuery: Must declare the scalar variable "@TotalRespondent".
+__________________________
+
+Log Entry : 21-Jul-15 2:09:46 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:10:49 PM
+In DefineQuery
+__________________________
+
+Log Entry : 21-Jul-15 2:10:49 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 2:10:49 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:10:49 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 21-Jul-15 2:10:49 PM
+Error in GenerateAndSaveQuery: Must declare the scalar variable "@TotalRespondent".
+__________________________
+
+Log Entry : 21-Jul-15 2:10:49 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:12:12 PM
+In DefineQuery
+__________________________
+
+Log Entry : 21-Jul-15 2:12:21 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 2:12:41 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:13:04 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 21-Jul-15 2:18:22 PM
+Error in GenerateAndSaveQuery: Must declare the scalar variable "@TotalRespondent".
+__________________________
+
+Log Entry : 21-Jul-15 2:18:22 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:18:55 PM
+In DefineQuery
+__________________________
+
+Log Entry : 21-Jul-15 2:18:55 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 2:18:55 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:18:55 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 21-Jul-15 2:19:45 PM
+Error in GenerateAndSaveQuery: Conversion failed when converting the nvarchar value '(SELECT ' to data type int.
+__________________________
+
+Log Entry : 21-Jul-15 2:19:45 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:19:51 PM
+In DefineQuery
+__________________________
+
+Log Entry : 21-Jul-15 2:19:51 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 2:19:51 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 2:19:51 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 21-Jul-15 2:20:35 PM
+In SaveRespondentList: 7
+__________________________
+
+Log Entry : 21-Jul-15 2:20:58 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 3:14:37 PM
+In DefineQuery
+__________________________
+
+Log Entry : 21-Jul-15 3:14:37 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 3:14:37 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 3:14:37 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 21-Jul-15 3:14:37 PM
+In SaveRespondentList: 7
+__________________________
+
+Log Entry : 21-Jul-15 3:14:37 PM
+Error in SaveRespondentList: Ambiguous column name 'PanelId'.
+__________________________
+
+Log Entry : 21-Jul-15 3:14:37 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 3:57:40 PM
+ In CreateProject
+__________________________
+
+Log Entry : 21-Jul-15 3:57:40 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 3:57:40 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 3:57:40 PM
+In SaveProject: 0
+__________________________
+
+Log Entry : 21-Jul-15 3:57:40 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 3:58:07 PM
+In DefineQuery
+__________________________
+
+Log Entry : 21-Jul-15 3:58:07 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 3:58:07 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 3:58:07 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 21-Jul-15 3:58:07 PM
+In SaveRespondentList: 8
+__________________________
+
+Log Entry : 21-Jul-15 3:58:07 PM
+Error in SaveRespondentList: Ambiguous column name 'PanelId'.
+__________________________
+
+Log Entry : 21-Jul-15 3:58:07 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 3:59:20 PM
+In DefineQuery
+__________________________
+
+Log Entry : 21-Jul-15 3:59:28 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 3:59:40 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 3:59:48 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 21-Jul-15 4:09:05 PM
+In SaveRespondentList: 8
+__________________________
+
+Log Entry : 21-Jul-15 4:10:53 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 5:44:16 PM
+In DefineQuery
+__________________________
+
+Log Entry : 21-Jul-15 5:44:17 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 5:44:18 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 5:44:20 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 21-Jul-15 5:44:28 PM
+In SaveRespondentList: 8
+__________________________
+
+Log Entry : 21-Jul-15 5:47:53 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 5:48:09 PM
+In DefineQuery
+__________________________
+
+Log Entry : 21-Jul-15 5:48:09 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 5:48:10 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 5:48:10 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 21-Jul-15 5:48:43 PM
+In SaveRespondentList: 8
+__________________________
+
+Log Entry : 21-Jul-15 5:48:44 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 6:32:35 PM
+ In CreateProject
+__________________________
+
+Log Entry : 21-Jul-15 6:32:35 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 6:32:35 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 6:32:38 PM
+In SaveProject: 0
+__________________________
+
+Log Entry : 21-Jul-15 6:32:39 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 6:33:03 PM
+ In CreateProject
+__________________________
+
+Log Entry : 21-Jul-15 6:33:03 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 6:33:03 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 6:33:03 PM
+In SaveProject: 0
+__________________________
+
+Log Entry : 21-Jul-15 6:33:03 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 6:33:16 PM
+In DefineQuery
+__________________________
+
+Log Entry : 21-Jul-15 6:33:16 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 6:33:16 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 6:33:16 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 21-Jul-15 6:33:17 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 6:33:30 PM
+In DefineQuery
+__________________________
+
+Log Entry : 21-Jul-15 6:33:30 PM
+In AuthorizeRequest
+__________________________
+
+Log Entry : 21-Jul-15 6:33:30 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 21-Jul-15 6:33:30 PM
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 21-Jul-15 6:33:32 PM
+In SaveRespondentList: 9
+__________________________
+
+Log Entry : 21-Jul-15 6:33:32 PM
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 08/08/2016 16:36:46
+ In CreateProject
+__________________________
+
+Log Entry : 08/08/2016 16:36:46
+In AuthorizeRequest
+__________________________
+
+Log Entry : 08/08/2016 16:36:46
+CreateProject: Authorization Failed
+__________________________
+
+Log Entry : 08/08/2016 16:36:46
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 08/08/2016 16:37:07
+ In CreateProject
+__________________________
+
+Log Entry : 08/08/2016 16:37:07
+In AuthorizeRequest
+__________________________
+
+Log Entry : 08/08/2016 16:37:07
+CreateProject: Authorization Failed
+__________________________
+
+Log Entry : 08/08/2016 16:37:07
+In SaveRequestResponseLog: 
+__________________________

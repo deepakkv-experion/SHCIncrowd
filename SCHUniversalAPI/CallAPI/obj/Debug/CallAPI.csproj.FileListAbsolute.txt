@@ -1,0 +1,4 @@
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\CallAPI\bin\Debug\CallAPI.pdb
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\CallAPI\obj\Debug\CallAPI.pdb
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\CallAPI\bin\Debug\CallAPI.exe
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\CallAPI\obj\Debug\CallAPI.exe

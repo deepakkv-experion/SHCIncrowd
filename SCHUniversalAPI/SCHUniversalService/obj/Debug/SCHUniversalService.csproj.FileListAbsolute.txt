@@ -1,0 +1,7 @@
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalService\bin\SCHUniversalService.dll.config
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalService\bin\SCHUniversalService.dll
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalService\bin\SCHUniversalService.pdb
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalService\obj\Debug\SCHUniversalService.csprojResolveAssemblyReference.cache
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalService\obj\Debug\SCHUniversalService.dll
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalService\obj\Debug\SCHUniversalService.pdb
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalService\bin\Newtonsoft.Json.dll

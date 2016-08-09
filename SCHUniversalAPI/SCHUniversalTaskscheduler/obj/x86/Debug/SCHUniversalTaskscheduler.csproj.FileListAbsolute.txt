@@ -1,0 +1,8 @@
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalTaskscheduler\bin\Debug\SCHUniversalTaskscheduler.exe.config
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalTaskscheduler\bin\Debug\SCHUniversalTaskscheduler.exe
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalTaskscheduler\bin\Debug\SCHUniversalTaskscheduler.pdb
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalTaskscheduler\bin\Debug\System.Web.Extensions.dll
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalTaskscheduler\bin\Debug\System.Web.Extensions.xml
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalTaskscheduler\obj\x86\Debug\SCHUniversalTaskscheduler.csprojResolveAssemblyReference.cache
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalTaskscheduler\obj\x86\Debug\SCHUniversalTaskscheduler.exe
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalTaskscheduler\obj\x86\Debug\SCHUniversalTaskscheduler.pdb

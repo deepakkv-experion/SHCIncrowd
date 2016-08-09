@@ -1,0 +1,15 @@
+D:\ASP.NET\SCHUniversalAPI\SCHUniversalProject\bin\SCHUniversalProject.dll
+D:\ASP.NET\SCHUniversalAPI\SCHUniversalProject\bin\SCHUniversalProject.pdb
+D:\ASP.NET\SCHUniversalAPI\SCHUniversalProject\obj\Debug\ResolveAssemblyReference.cache
+D:\ASP.NET\SCHUniversalAPI\SCHUniversalProject\obj\Debug\SCHUniversalProject.dll
+D:\ASP.NET\SCHUniversalAPI\SCHUniversalProject\obj\Debug\SCHUniversalProject.pdb
+D:\Projects\Paradigm Sample\PPS Support\trunk\MISC DOCS\Paradigmsample Site Updates\ASP.NET\SCHUniversalAPI\SCHUniversalProject\bin\SCHUniversalProject.dll
+D:\Projects\Paradigm Sample\PPS Support\trunk\MISC DOCS\Paradigmsample Site Updates\ASP.NET\SCHUniversalAPI\SCHUniversalProject\bin\SCHUniversalProject.pdb
+D:\Projects\Paradigm Sample\PPS Support\trunk\MISC DOCS\Paradigmsample Site Updates\ASP.NET\SCHUniversalAPI\SCHUniversalProject\obj\Debug\SCHUniversalProject.dll
+D:\Projects\Paradigm Sample\PPS Support\trunk\MISC DOCS\Paradigmsample Site Updates\ASP.NET\SCHUniversalAPI\SCHUniversalProject\obj\Debug\SCHUniversalProject.pdb
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalProject\bin\SCHUniversalProject.dll.config
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalProject\bin\SCHUniversalProject.dll
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalProject\bin\SCHUniversalProject.pdb
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalProject\obj\Debug\SCHUniversalProject.dll
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalProject\obj\Debug\SCHUniversalProject.pdb
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalProject\obj\Debug\SCHUniversalProject.csprojResolveAssemblyReference.cache
