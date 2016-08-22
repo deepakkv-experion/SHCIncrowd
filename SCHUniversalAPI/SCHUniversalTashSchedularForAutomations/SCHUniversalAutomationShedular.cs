@@ -14,7 +14,47 @@ namespace SCHUniversalTashSchedularForAutomations
     {
         static void Main(string[] args)
         {
-            GetAllSamplesNotAchievedRequiredN();
+            ////WriteToLog("Entered the schedular to fetch to fetch the project having created time greater than 30 mins ", "L2");
+            //////GetAllSamplesNotAchievedRequiredN();
+            CreateTextFile();
+        }
+
+        private static void CreateTextFile()
+        {          
+            var dat = DateTime.Now.ToString("hh-mm-ss");
+            string fileName = @"E:\SchedularWrited\DeepakTesting" + dat + ".txt";
+            try
+            {
+                // Check if file already exists. If yes, delete it. 
+                if (File.Exists(fileName))
+                {
+                    File.Delete(fileName);
+                }
+
+                // Create a new file 
+                using (FileStream fs = File.Create(fileName))
+                {
+                    // Add some text to file
+                    Byte[] title = new UTF8Encoding(true).GetBytes("New Text File");
+                    fs.Write(title, 0, title.Length);
+                    byte[] author = new UTF8Encoding(true).GetBytes("Deepak Testing");
+                    fs.Write(author, 0, author.Length);
+                }
+
+                // Open the stream and read it back.
+                using (StreamReader sr = File.OpenText(fileName))
+                {
+                    string s = "";
+                    while ((s = sr.ReadLine()) != null)
+                    {
+                        Console.WriteLine(s);
+                    }
+                }
+            }
+            catch (Exception Ex)
+            {
+                Console.WriteLine(Ex.ToString());
+            }
         }
 
         public static void GetAllSamplesNotAchievedRequiredN()
@@ -31,7 +71,8 @@ namespace SCHUniversalTashSchedularForAutomations
                     cmd.CommandType = CommandType.StoredProcedure;
                     SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                     adapter.Fill(dsProject);
-                    ////var test = dsProject.Tables[0].Rows[0]["MaxPanelistCount"];                  
+                    ////var test = dsProject.Tables[0].Rows[0]["MaxPanelistCount"]; 
+                    WriteToLog("Get the project having created time greater than 30 mins ", "L2");
                 }
                 catch (Exception ex)
                 {

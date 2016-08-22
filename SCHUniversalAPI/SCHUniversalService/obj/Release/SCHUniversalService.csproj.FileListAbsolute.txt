@@ -1,0 +1,6 @@
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalService\bin\SCHUniversalService.dll.config
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalService\bin\SCHUniversalService.dll
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalService\bin\SCHUniversalService.pdb
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalService\bin\Newtonsoft.Json.dll
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalService\obj\Release\SCHUniversalService.dll
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalService\obj\Release\SCHUniversalService.pdb

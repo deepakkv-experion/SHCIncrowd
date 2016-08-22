@@ -41,7 +41,7 @@ namespace SCHUniversalAPI
         #region NewRequirement
 
         [OperationContract]
-        [WebInvoke(Method = "POST", UriTemplate = "updatequery", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        [WebInvoke(UriTemplate = "updatedetails", Method = "POST", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
         Stream UpdateQuery(SHCUniversalModel updatingValues);
 
         [OperationContract]

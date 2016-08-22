@@ -1483,3 +1483,3246 @@ __________________________
 Log Entry : 08/08/2016 16:37:07
 In SaveRequestResponseLog: 
 __________________________
+
+Log Entry : 10/08/2016 11:15:00
+ In CreateProject
+__________________________
+
+Log Entry : 10/08/2016 11:15:00
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10/08/2016 11:15:00
+CreateProject: Authorization Failed
+__________________________
+
+Log Entry : 10/08/2016 11:15:00
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10/08/2016 11:15:49
+ In CreateProject
+__________________________
+
+Log Entry : 10/08/2016 11:15:59
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10/08/2016 11:19:14
+CreateProject: Authorization Failed
+__________________________
+
+Log Entry : 10/08/2016 11:19:14
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10/08/2016 11:19:24
+ In CreateProject
+__________________________
+
+Log Entry : 10/08/2016 11:19:26
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10/08/2016 11:19:40
+CreateProject: Invalid data
+__________________________
+
+Log Entry : 10/08/2016 11:19:40
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10/08/2016 11:26:07
+ In CreateProject
+__________________________
+
+Log Entry : 10/08/2016 11:26:09
+In AuthorizeRequest
+__________________________
+
+Log Entry : 10/08/2016 11:26:09
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 10/08/2016 11:26:09
+In SaveProject: 0
+__________________________
+
+Log Entry : 10/08/2016 11:26:09
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 11/08/2016 16:52:35
+ In CreateProject
+__________________________
+
+Log Entry : 11/08/2016 16:52:37
+In AuthorizeRequest
+__________________________
+
+Log Entry : 11/08/2016 16:52:37
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 11/08/2016 16:52:37
+In SaveProject: 0
+__________________________
+
+Log Entry : 11/08/2016 16:52:38
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 11/08/2016 18:30:44
+ In Get Project Status
+__________________________
+
+Log Entry : 11/08/2016 18:30:44
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 11/08/2016 18:31:36
+ In Get Project Status
+__________________________
+
+Log Entry : 11/08/2016 18:31:44
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 11/08/2016 18:32:08
+ In Get Project Status
+__________________________
+
+Log Entry : 11/08/2016 18:32:15
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 11/08/2016 19:01:54
+ In Get Project Status
+__________________________
+
+Log Entry : 11/08/2016 19:01:56
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 11/08/2016 19:14:44
+ In Get Project Status
+__________________________
+
+Log Entry : 11/08/2016 19:14:46
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 11/08/2016 19:27:04
+ In Get Project Status
+__________________________
+
+Log Entry : 11/08/2016 19:27:06
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 11/08/2016 19:27:15
+ In Get Project Status
+__________________________
+
+Log Entry : 11/08/2016 19:27:16
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 11/08/2016 19:27:23
+ In Get Project Status
+__________________________
+
+Log Entry : 11/08/2016 19:27:24
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 11/08/2016 19:27:33
+ In Get Project Status
+__________________________
+
+Log Entry : 11/08/2016 19:27:34
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 11/08/2016 19:27:35
+Error in Get Project Status By ProjectId : Conversion failed when converting the nvarchar value '2ewtewr' to data type int.
+__________________________
+
+Log Entry : 11/08/2016 19:59:26
+ In Get Project Status
+__________________________
+
+Log Entry : 11/08/2016 19:59:31
+ In Get Project Status
+__________________________
+
+Log Entry : 11/08/2016 19:59:33
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 11/08/2016 19:59:40
+ In Get Project Status
+__________________________
+
+Log Entry : 11/08/2016 19:59:40
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 11/08/2016 19:59:47
+ In Get Project Status
+__________________________
+
+Log Entry : 11/08/2016 19:59:47
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 12/08/2016 10:25:06
+ In Get Project Status
+__________________________
+
+Log Entry : 12/08/2016 10:25:06
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 12/08/2016 14:49:05
+ In ChangeProjectStatus
+__________________________
+
+Log Entry : 12/08/2016 14:49:09
+In AuthorizeRequest
+__________________________
+
+Log Entry : 12/08/2016 14:49:09
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 12/08/2016 14:49:30
+In UpdateProjectStatus: 115
+__________________________
+
+Log Entry : 12/08/2016 14:50:30
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 12/08/2016 14:50:33
+ In ChangeProjectStatus
+__________________________
+
+Log Entry : 12/08/2016 14:51:23
+In AuthorizeRequest
+__________________________
+
+Log Entry : 12/08/2016 14:51:23
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 12/08/2016 14:51:37
+In UpdateProjectStatus: 115
+__________________________
+
+Log Entry : 12/08/2016 14:51:51
+In UpdateProjectStatus: 115
+__________________________
+
+Log Entry : 12/08/2016 14:58:00
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 12/08/2016 14:58:25
+ In ChangeProjectStatus
+__________________________
+
+Log Entry : 12/08/2016 14:58:28
+In AuthorizeRequest
+__________________________
+
+Log Entry : 12/08/2016 14:58:28
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 12/08/2016 14:58:43
+In UpdateProjectStatus: 115
+__________________________
+
+Log Entry : 12/08/2016 14:59:06
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 12/08/2016 15:02:13
+ In ChangeProjectStatus
+__________________________
+
+Log Entry : 12/08/2016 15:02:13
+In AuthorizeRequest
+__________________________
+
+Log Entry : 12/08/2016 15:02:13
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 12/08/2016 15:02:16
+In UpdateProjectStatus: 115
+__________________________
+
+Log Entry : 12/08/2016 15:02:30
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 12/08/2016 15:03:07
+ In ChangeProjectStatus
+__________________________
+
+Log Entry : 12/08/2016 15:03:07
+In AuthorizeRequest
+__________________________
+
+Log Entry : 12/08/2016 15:03:07
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 12/08/2016 15:03:08
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 12/08/2016 15:03:27
+ In ChangeProjectStatus
+__________________________
+
+Log Entry : 12/08/2016 15:03:27
+In AuthorizeRequest
+__________________________
+
+Log Entry : 12/08/2016 15:03:27
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 12/08/2016 15:03:27
+In UpdateProjectStatus: 115
+__________________________
+
+Log Entry : 12/08/2016 15:03:29
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 12/08/2016 15:11:26
+ In Get Project Status
+__________________________
+
+Log Entry : 12/08/2016 15:11:26
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 12/08/2016 15:11:31
+ In Get Project Status
+__________________________
+
+Log Entry : 12/08/2016 15:11:37
+ In Get Project Status
+__________________________
+
+Log Entry : 12/08/2016 15:11:37
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 12/08/2016 19:08:25
+ In Get Project Status
+__________________________
+
+Log Entry : 12/08/2016 19:08:25
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 12/08/2016 19:10:34
+ In Get Project Status
+__________________________
+
+Log Entry : 12/08/2016 19:10:34
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 12/08/2016 19:12:11
+ In Get Project Status
+__________________________
+
+Log Entry : 12/08/2016 19:12:11
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 16/08/2016 11:21:25
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:21:25
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:21:25
+DefineQuery: Invalid Specialty
+__________________________
+
+Log Entry : 16/08/2016 11:21:25
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:22:46
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:22:46
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:22:46
+DefineQuery: Invalid Specialty
+__________________________
+
+Log Entry : 16/08/2016 11:22:46
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:22:53
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:22:53
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:23:06
+DefineQuery: Invalid Specialty
+__________________________
+
+Log Entry : 16/08/2016 11:23:10
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:26:58
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:26:58
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:26:58
+DefineQuery: Invalid Specialty
+__________________________
+
+Log Entry : 16/08/2016 11:26:58
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:28:08
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:28:08
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:28:08
+DefineQuery: Invalid Specialty
+__________________________
+
+Log Entry : 16/08/2016 11:28:08
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:28:27
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:28:27
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:28:27
+DefineQuery: Invalid Specialty
+__________________________
+
+Log Entry : 16/08/2016 11:28:27
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:28:37
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:28:37
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:29:01
+DefineQuery: Invalid Specialty
+__________________________
+
+Log Entry : 16/08/2016 11:29:01
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:30:23
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:30:24
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:30:28
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:30:29
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:30:29
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 11:30:31
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:30:47
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:30:47
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:30:47
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:31:01
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:31:19
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 11:31:28
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:34:24
+In SaveRespondentList: 2
+__________________________
+
+Log Entry : 16/08/2016 11:34:24
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:36:43
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:36:43
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:36:43
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:36:44
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:36:45
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 11:36:45
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:36:48
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:36:48
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:36:48
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:36:49
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:36:50
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 11:36:50
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:37:00
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:37:00
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:37:03
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:37:03
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:37:06
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 11:37:06
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:37:11
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:37:11
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:37:11
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:37:19
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:37:22
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 11:37:22
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:37:26
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:37:26
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:37:26
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:37:34
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:37:44
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 11:37:44
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:37:48
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:37:48
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:37:48
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:37:51
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:38:14
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 11:38:14
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:38:16
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:38:16
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:38:16
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:38:16
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:38:20
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 11:38:20
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:38:23
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:38:23
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:38:23
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:38:23
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:38:35
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 11:38:35
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:38:39
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:38:39
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:38:39
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:38:39
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:39:26
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 11:39:26
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:39:33
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:39:33
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:39:33
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:39:33
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:40:30
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 11:40:30
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:41:53
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:41:53
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:41:53
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:41:53
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:41:56
+In SaveRespondentList: 2
+__________________________
+
+Log Entry : 16/08/2016 11:41:56
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:46:00
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:46:00
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:46:00
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:46:00
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:46:00
+In SaveRespondentList: 2
+__________________________
+
+Log Entry : 16/08/2016 11:46:00
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:51:59
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:51:59
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:51:59
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:51:59
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:51:59
+In SaveRespondentList: 2
+__________________________
+
+Log Entry : 16/08/2016 11:51:59
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:54:06
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 11:54:06
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 11:54:06
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 11:54:06
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 11:54:06
+In SaveRespondentList: 2
+__________________________
+
+Log Entry : 16/08/2016 11:54:06
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 17:09:29
+ In Get Project Status
+__________________________
+
+Log Entry : 16/08/2016 17:09:29
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 16/08/2016 17:10:32
+ In UpdateQuery
+__________________________
+
+Log Entry : 16/08/2016 17:10:32
+Failed to update
+__________________________
+
+Log Entry : 16/08/2016 17:11:48
+ In UpdateQuery
+__________________________
+
+Log Entry : 16/08/2016 17:11:48
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 17:11:48
+Entered Update Required N Method
+__________________________
+
+Log Entry : 16/08/2016 17:11:48
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 17:11:48
+Succesfully updated
+__________________________
+
+Log Entry : 16/08/2016 17:12:14
+ In UpdateQuery
+__________________________
+
+Log Entry : 16/08/2016 17:12:14
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 17:12:14
+Entered Update Required N Method
+__________________________
+
+Log Entry : 16/08/2016 17:12:14
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 17:12:14
+Succesfully updated
+__________________________
+
+Log Entry : 16/08/2016 17:12:44
+ In UpdateQuery
+__________________________
+
+Log Entry : 16/08/2016 17:13:33
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 17:13:34
+Entered Update Required N Method
+__________________________
+
+Log Entry : 16/08/2016 17:13:34
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 17:13:34
+Succesfully updated
+__________________________
+
+Log Entry : 16/08/2016 17:39:17
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 17:39:17
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 17:39:17
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 17:39:17
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 17:39:17
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 17:39:17
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 17:39:44
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 17:39:44
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 17:39:44
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 17:39:44
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 18:20:01
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 18:20:11
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 18:20:25
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 18:20:36
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 18:21:37
+Error in GenerateAndSaveQuery: StartIndex cannot be less than zero.
+Parameter name: startIndex
+__________________________
+
+Log Entry : 16/08/2016 18:21:45
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 18:27:07
+Error in GenerateAndSaveQuery: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 16/08/2016 18:27:11
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:27:16
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 18:27:16
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 18:27:16
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:27:16
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 18:27:42
+Error in GenerateAndSaveQuery: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 16/08/2016 18:27:43
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:28:23
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 18:28:23
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 18:28:23
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:28:23
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 18:34:35
+Error in GenerateAndSaveQuery: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+__________________________
+
+Log Entry : 16/08/2016 18:34:36
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:34:45
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 18:34:45
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 18:34:45
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:34:45
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 18:39:42
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 18:39:42
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 18:39:42
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:39:42
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:39:54
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 18:39:54
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 18:39:54
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:39:54
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 18:39:57
+In SaveRespondentList: 116
+__________________________
+
+Log Entry : 16/08/2016 18:39:59
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:40:05
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 18:40:05
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 18:40:05
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:40:05
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 18:40:05
+In SaveRespondentList: 116
+__________________________
+
+Log Entry : 16/08/2016 18:40:05
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:40:15
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 18:40:15
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 18:40:15
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:40:15
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:40:44
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 18:40:44
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 18:40:44
+DefineQuery: Invalid Query Condition
+__________________________
+
+Log Entry : 16/08/2016 18:40:44
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:44:47
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 18:44:47
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 18:44:47
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:44:47
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 18:44:47
+In SaveRespondentList: 116
+__________________________
+
+Log Entry : 16/08/2016 18:44:47
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:55:27
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 18:55:27
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 18:55:27
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:55:27
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 18:55:27
+In SaveRespondentList: 116
+__________________________
+
+Log Entry : 16/08/2016 18:55:27
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:57:30
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 18:57:30
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 18:57:30
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 18:57:30
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 19:11:10
+In SaveRespondentList: 116
+__________________________
+
+Log Entry : 16/08/2016 19:11:10
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 19:13:23
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 19:13:23
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 19:13:23
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 19:13:23
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 19:13:23
+In SaveRespondentList: 2
+__________________________
+
+Log Entry : 16/08/2016 19:13:23
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 19:13:49
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 19:13:49
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 19:13:49
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 19:13:49
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 19:13:49
+In SaveRespondentList: 2
+__________________________
+
+Log Entry : 16/08/2016 19:13:49
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 19:14:03
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 19:14:03
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 19:14:03
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 19:14:04
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 19:14:04
+In SaveRespondentList: 116
+__________________________
+
+Log Entry : 16/08/2016 19:14:04
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 19:15:14
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 19:15:14
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 19:15:14
+DefineQuery: Invalid Specialty
+__________________________
+
+Log Entry : 16/08/2016 19:15:14
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 19:19:40
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 19:19:40
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 19:19:40
+DefineQuery: Invalid Specialty
+__________________________
+
+Log Entry : 16/08/2016 19:19:40
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 19:19:51
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 19:19:51
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 19:19:51
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 19:19:52
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 19:19:52
+In SaveRespondentList: 2
+__________________________
+
+Log Entry : 16/08/2016 19:19:52
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 19:20:08
+In DefineQuery
+__________________________
+
+Log Entry : 16/08/2016 19:20:08
+In AuthorizeRequest
+__________________________
+
+Log Entry : 16/08/2016 19:20:08
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 16/08/2016 19:20:08
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 16/08/2016 19:20:08
+In SaveRespondentList: 2
+__________________________
+
+Log Entry : 16/08/2016 19:20:08
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 14:30:19
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 14:31:20
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:02:20
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:04:14
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:07:04
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:07:58
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:10:13
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:11:08
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:11:38
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:33:21
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:33:25
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:33:28
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:33:29
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:33:29
+Succesfully updated
+__________________________
+
+Log Entry : 17/08/2016 15:34:59
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:34:59
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:35:01
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:35:05
+Error in Updating Required N : Divide by zero error encountered.
+__________________________
+
+Log Entry : 17/08/2016 15:35:05
+Error in update query :Divide by zero error encountered.
+__________________________
+
+Log Entry : 17/08/2016 15:35:12
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:35:12
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:35:13
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:35:14
+Error in Updating Required N : Divide by zero error encountered.
+__________________________
+
+Log Entry : 17/08/2016 15:35:14
+Error in update query :Divide by zero error encountered.
+__________________________
+
+Log Entry : 17/08/2016 15:43:07
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:43:07
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:43:07
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:43:08
+Error in Updating Required N : Divide by zero error encountered.
+__________________________
+
+Log Entry : 17/08/2016 15:43:08
+Error in update query :Divide by zero error encountered.
+__________________________
+
+Log Entry : 17/08/2016 15:43:42
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:43:42
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:43:46
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:44:54
+Error in Updating Required N : Divide by zero error encountered.
+__________________________
+
+Log Entry : 17/08/2016 15:44:54
+Error in update query :Divide by zero error encountered.
+__________________________
+
+Log Entry : 17/08/2016 15:45:42
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:45:42
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:45:46
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:45:55
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:45:55
+Succesfully updated
+__________________________
+
+Log Entry : 17/08/2016 15:46:14
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:46:14
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:46:14
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:46:18
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:46:18
+Succesfully updated
+__________________________
+
+Log Entry : 17/08/2016 15:46:32
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:46:32
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:46:33
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:46:33
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:46:33
+Succesfully updated
+__________________________
+
+Log Entry : 17/08/2016 15:47:13
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:47:13
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:47:13
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:47:14
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:47:14
+Succesfully updated
+__________________________
+
+Log Entry : 17/08/2016 15:49:52
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:49:52
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:49:52
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:49:53
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:49:55
+Succesfully updated
+__________________________
+
+Log Entry : 17/08/2016 15:50:26
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:50:26
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:50:26
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:50:27
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:50:27
+Succesfully updated
+__________________________
+
+Log Entry : 17/08/2016 15:51:14
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:51:14
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:51:14
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:51:14
+Error in Updating Required N : Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 17/08/2016 15:51:14
+Error in update query :Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 17/08/2016 15:51:28
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:51:28
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:51:29
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:51:58
+Error in Updating Required N : Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 17/08/2016 15:52:00
+Error in update query :Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 17/08/2016 15:52:03
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:52:03
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:52:04
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:52:07
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:52:07
+Succesfully updated
+__________________________
+
+Log Entry : 17/08/2016 15:52:17
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:52:17
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:52:19
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:52:20
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:52:20
+Succesfully updated
+__________________________
+
+Log Entry : 17/08/2016 15:53:32
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:53:32
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:53:35
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:53:36
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:53:36
+Succesfully updated
+__________________________
+
+Log Entry : 17/08/2016 15:57:40
+ In UpdateQuery
+__________________________
+
+Log Entry : 17/08/2016 15:57:40
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:57:40
+Entered Update Required N Method
+__________________________
+
+Log Entry : 17/08/2016 15:57:40
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 17/08/2016 15:57:40
+Succesfully updated
+__________________________
+
+Log Entry : 18/08/2016 13:27:11
+ In UpdateQuery
+__________________________
+
+Log Entry : 18/08/2016 13:27:11
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 13:27:11
+Entered Update Required N Method
+__________________________
+
+Log Entry : 18/08/2016 13:27:11
+Error in update query :Failed to update
+__________________________
+
+Log Entry : 18/08/2016 13:27:32
+ In UpdateQuery
+__________________________
+
+Log Entry : 18/08/2016 13:27:33
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 13:27:35
+Entered Update Required N Method
+__________________________
+
+Log Entry : 18/08/2016 13:27:41
+Error in update query :Failed to update
+__________________________
+
+Log Entry : 18/08/2016 13:27:54
+ In UpdateQuery
+__________________________
+
+Log Entry : 18/08/2016 13:27:54
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 13:27:54
+Entered Update Required N Method
+__________________________
+
+Log Entry : 18/08/2016 13:27:54
+Error in update query :Failed to update
+__________________________
+
+Log Entry : 18/08/2016 14:26:40
+ In UpdateQuery
+__________________________
+
+Log Entry : 18/08/2016 14:26:40
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:26:40
+Entered Update Required N Method
+__________________________
+
+Log Entry : 18/08/2016 14:26:40
+Error in update query :Failed to update
+__________________________
+
+Log Entry : 18/08/2016 14:26:50
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 14:26:50
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 14:26:51
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:26:51
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 14:27:00
+Error in GenerateAndSaveQuery: Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 18/08/2016 14:27:00
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:27:07
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 14:27:07
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 14:27:14
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:27:26
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 14:27:55
+Error in GenerateAndSaveQuery: Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 18/08/2016 14:27:55
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:27:59
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 14:27:59
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 14:27:59
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:28:00
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 14:28:05
+Error in GenerateAndSaveQuery: Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 18/08/2016 14:28:05
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:28:13
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 14:28:13
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 14:28:13
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:28:13
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 14:28:20
+Error in GenerateAndSaveQuery: Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 18/08/2016 14:28:20
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:28:23
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 14:28:23
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 14:28:23
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:28:23
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 14:28:29
+Error in GenerateAndSaveQuery: Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 18/08/2016 14:28:29
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:28:42
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 14:28:42
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 14:28:42
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:28:42
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 14:28:51
+Error in GenerateAndSaveQuery: Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 18/08/2016 14:28:51
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:28:54
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 14:28:54
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 14:28:54
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:28:54
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 14:29:20
+Error in GenerateAndSaveQuery: Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 18/08/2016 14:29:20
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:29:23
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 14:29:23
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 14:29:23
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:29:23
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 14:29:51
+Error in GenerateAndSaveQuery: Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 18/08/2016 14:29:51
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:29:54
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 14:29:54
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 14:29:54
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:29:54
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 14:30:19
+Error in GenerateAndSaveQuery: Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 18/08/2016 14:30:19
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:30:21
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 14:30:21
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 14:30:21
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:30:22
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 14:30:24
+Error in GenerateAndSaveQuery: Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 18/08/2016 14:30:24
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:30:44
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 14:30:44
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 14:30:44
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:30:44
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 14:31:07
+Error in GenerateAndSaveQuery: Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 18/08/2016 14:31:07
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:31:10
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 14:31:10
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 14:31:10
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:31:10
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 14:31:16
+Error in GenerateAndSaveQuery: Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 18/08/2016 14:31:16
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:31:18
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 14:31:18
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 14:31:18
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:31:18
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 14:32:53
+Error in GenerateAndSaveQuery: Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 18/08/2016 14:32:53
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:32:56
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 14:32:56
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 14:32:56
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 14:32:56
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 14:33:00
+In SaveRespondentList: 2
+__________________________
+
+Log Entry : 18/08/2016 14:33:00
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 16:34:52
+In DefineQuery
+__________________________
+
+Log Entry : 18/08/2016 16:34:52
+In AuthorizeRequest
+__________________________
+
+Log Entry : 18/08/2016 16:34:52
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 16:34:52
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 18/08/2016 16:34:53
+In SaveRespondentList: 2
+__________________________
+
+Log Entry : 18/08/2016 16:34:53
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 16:51:58
+ In UpdateQuery
+__________________________
+
+Log Entry : 18/08/2016 16:51:58
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 16:51:58
+Entered Update Required N Method
+__________________________
+
+Log Entry : 18/08/2016 16:51:59
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 18/08/2016 16:51:59
+Succesfully updated
+__________________________
+
+Log Entry : 19/08/2016 17:35:06
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 17:35:06
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 18:20:06
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 18:20:06
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 18:21:25
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 18:21:25
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 18:26:21
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 18:26:21
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 18:26:32
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 18:26:40
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 18:27:52
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 18:27:55
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 18:28:51
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:28:51
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:28:51
+DefineQuery: Authorization Failed
+__________________________
+
+Log Entry : 19/08/2016 18:28:51
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:31:18
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:31:18
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:31:18
+DefineQuery: Authorization Failed
+__________________________
+
+Log Entry : 19/08/2016 18:32:39
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:32:50
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:32:50
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:32:50
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:32:51
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:32:51
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:32:51
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:40:01
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:40:01
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:40:01
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:40:01
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:40:01
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:40:01
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:43:11
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:43:11
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:43:11
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:43:11
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:43:11
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:43:11
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:43:42
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:43:42
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:43:42
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:43:43
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:43:43
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:43:43
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:44:15
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:44:15
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:44:15
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:44:16
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:44:16
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:44:16
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:44:28
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:44:28
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:44:28
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:44:28
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:44:28
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:44:28
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:45:24
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:45:24
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:45:24
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:45:24
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:45:25
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:45:26
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:46:04
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 18:46:04
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 18:46:37
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 18:46:37
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 18:46:59
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 18:46:59
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 18:47:51
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 18:47:51
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 18:47:54
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 18:47:54
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 18:48:13
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:48:13
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:48:13
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:48:13
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:48:13
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:48:13
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:48:30
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:48:30
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:48:30
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:48:30
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:48:30
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:48:30
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:51:09
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:51:09
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:51:09
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:51:09
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:51:09
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:51:10
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:51:28
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:51:28
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:51:28
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:51:28
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:51:28
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:51:28
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:53:00
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:53:00
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:53:00
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:53:00
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:53:00
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:53:00
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:55:20
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:55:20
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:55:21
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:55:21
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:55:21
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:55:21
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:55:49
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:55:49
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:55:49
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:55:49
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:55:49
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:55:49
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:56:08
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:56:08
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:56:08
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:56:08
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:56:09
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:56:09
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:57:48
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:57:48
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:57:48
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:57:48
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:57:48
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:57:48
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:59:37
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 18:59:37
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 18:59:37
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 18:59:37
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 18:59:37
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 18:59:37
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:01:04
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 19:01:04
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:01:04
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:01:04
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 19:01:04
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 19:01:04
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:02:26
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 19:02:26
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:02:26
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:02:26
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 19:02:26
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 19:02:26
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:07:54
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 19:07:54
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:07:54
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:07:54
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 19:07:54
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 19:07:54
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:08:08
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 19:08:08
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:08:08
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:08:08
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 19:08:08
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 19:08:08
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:08:25
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 19:08:25
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:08:25
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:08:25
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 19:08:25
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 19:08:25
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:10:59
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 19:10:59
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:10:59
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:10:59
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 19:10:59
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 19:10:59
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:12:44
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 19:12:44
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:12:44
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:12:44
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 19:12:44
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 19:12:44
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:12:59
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 19:12:59
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 19:13:21
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 19:13:21
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 19:14:49
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 19:14:49
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:14:49
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:14:49
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 19:14:49
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 19:14:49
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:20:56
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 19:20:56
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:20:56
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:20:56
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 19:20:56
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 19:20:56
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:22:27
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 19:22:27
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 19:25:31
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 19:25:31
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 19:25:42
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 19:25:42
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:25:42
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:25:42
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 19:25:42
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 19:25:42
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:31:27
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 19:31:27
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:31:27
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:31:27
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 19:31:27
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 19:31:27
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:37:44
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 19:37:44
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:37:44
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:37:44
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 19:37:44
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 19:37:44
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:38:02
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 19:38:02
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 19:39:11
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 19:39:11
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 19:39:55
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 19:39:55
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:39:55
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:39:55
+In GenerateAndSaveQuery: 
+__________________________
+
+Log Entry : 19/08/2016 19:39:55
+In SaveRespondentList: 113
+__________________________
+
+Log Entry : 19/08/2016 19:39:55
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:40:54
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 19:40:54
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 19:42:35
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 19:42:35
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 19:44:44
+In DefineQuery
+__________________________
+
+Log Entry : 19/08/2016 19:44:44
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:44:44
+DefineQuery: Authorization Failed
+__________________________
+
+Log Entry : 19/08/2016 19:44:49
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:50:22
+ In UpdateQuery
+__________________________
+
+Log Entry : 19/08/2016 19:50:22
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:50:22
+UpdateQuery : Authorization Failed
+__________________________
+
+Log Entry : 19/08/2016 19:50:39
+ In UpdateQuery
+__________________________
+
+Log Entry : 19/08/2016 19:50:39
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:50:39
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:50:39
+Entered Update Required N Method
+__________________________
+
+Log Entry : 19/08/2016 19:50:40
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 19:50:40
+Succesfully updated
+__________________________
+
+Log Entry : 19/08/2016 19:50:54
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 19:50:54
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:50:54
+Entered Get Project Status By ProjectId
+__________________________
+
+Log Entry : 19/08/2016 19:51:01
+ In Get Project Status
+__________________________
+
+Log Entry : 19/08/2016 19:51:01
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 19:51:01
+Get Project Status : Authorization Failed
+__________________________
+
+Log Entry : 19/08/2016 20:46:05
+ In UpdateQuery
+__________________________
+
+Log Entry : 19/08/2016 20:46:05
+In AuthorizeRequest
+__________________________
+
+Log Entry : 19/08/2016 20:46:06
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 20:46:06
+Entered Update Required N Method
+__________________________
+
+Log Entry : 19/08/2016 20:46:06
+In SaveRequestResponseLog: 
+__________________________
+
+Log Entry : 19/08/2016 20:46:06
+Succesfully updated
+__________________________

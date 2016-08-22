@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\Publish\SCHUniversalAPI</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/30/2015 18:43:44</publishTime>
+    </File>
+    <File Include="bin/SCHUniversalAPI.dll">
+      <publishTime>08/19/2016 22:10:40</publishTime>
+    </File>
+    <File Include="universalrestservice.svc">
+      <publishTime>10/30/2015 18:43:42</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/19/2016 16:12:15</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

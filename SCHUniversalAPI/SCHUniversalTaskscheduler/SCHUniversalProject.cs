@@ -59,7 +59,7 @@ namespace SCHUniversalTaskscheduler
                     }
 
                     // new requirement
-                    if (dtReminder.Rows.Count > 0)
+                    if (dtIdentifiersHavingrewardUpdate.Rows.Count > 0)
                     {
                         KinesisAPIRewardManagement(dtIdentifiersHavingrewardUpdate);
                     }
@@ -81,7 +81,7 @@ namespace SCHUniversalTaskscheduler
         {
             try
             {
-                WriteToLog("KinesisAPIRewardManagement: ", "L2");              
+                WriteToLog("KinesisAPIRewardManagement: ", "L2");
                 string successList = string.Empty;
                 string failedList = string.Empty;
                 //Call Kinesis Login API
@@ -92,7 +92,7 @@ namespace SCHUniversalTaskscheduler
                     string kinesisSesKey = apiResponse.data["sesKey"];
                     foreach (DataRow row in dtReward.Rows)
                     {
-                        apiResponse = AddRewardPoint(row["Identifier"].ToString(), kinesisSesKey, Convert.ToInt32(row["RewardPoints"]), row["RewardDesciption"].ToString());                   
+                        apiResponse = AddRewardPoint(row["Identifier"].ToString(), kinesisSesKey, Convert.ToInt32(row["RewardPoints"]), row["RewardDesciption"].ToString());
 
                         if (apiResponse.success == "True")
                         {
@@ -114,7 +114,7 @@ namespace SCHUniversalTaskscheduler
                         }
                     }
 
-                    UpdateRewardPointStatus(successList, failedList);                   
+                    UpdateRewardPointStatus(successList, failedList);
                 }
 
             }
@@ -137,7 +137,7 @@ namespace SCHUniversalTaskscheduler
                 con.Open();
                 cmd.ExecuteNonQuery();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 WriteToLog("Error in UpdateRewardPointStatus: " + ex.Message, "L1");
             }
@@ -493,28 +493,31 @@ namespace SCHUniversalTaskscheduler
 
         private static KinesisAPIResponse KinesisLogin(DataTable dtProject)
         {
+            ////KinesisAPIResponse result = new KinesisAPIResponse();
+
+            ////try
+            ////{
+            ////    WriteToLog("In KinesisLogin: ", "L2");
+
+            ////    string datapointsJsonString;
+            ////    string postData;
+            ////    string kinesisUserName = ConfigurationManager.AppSettings["KinesisPanelUserName"];
+            ////    string kinesisPassword = ConfigurationManager.AppSettings["KinesisPanelPassword"];
+            ////    string panelId = ConfigurationManager.AppSettings["panelId"];
+
+            ////    datapointsJsonString = "{ \"username\": \"" + kinesisUserName + "\", \"password\": \"" + kinesisPassword + "\", \"panelid\": " + panelId + " }";
+            ////    postData = string.Format("method=integration.auth.login&data={0}", datapointsJsonString);
+
+            ////    result = RunKinesisPanelAPI(postData);
+            ////}
+            ////catch (Exception ex)
+            ////{
+            ////    WriteToLog("Error in KinesisLogin: " + ex.Message, "L1");
+            ////}
+
             KinesisAPIResponse result = new KinesisAPIResponse();
-
-            try
-            {
-                WriteToLog("In KinesisLogin: ", "L2");
-
-                string datapointsJsonString;
-                string postData;
-                string kinesisUserName = ConfigurationManager.AppSettings["KinesisPanelUserName"];
-                string kinesisPassword = ConfigurationManager.AppSettings["KinesisPanelPassword"];
-                string panelId = ConfigurationManager.AppSettings["panelId"];
-
-                datapointsJsonString = "{ \"username\": \"" + kinesisUserName + "\", \"password\": \"" + kinesisPassword + "\", \"panelid\": " + panelId + " }";
-                postData = string.Format("method=integration.auth.login&data={0}", datapointsJsonString);
-
-                result = RunKinesisPanelAPI(postData);
-            }
-            catch (Exception ex)
-            {
-                WriteToLog("Error in KinesisLogin: " + ex.Message, "L1");
-            }
-
+            result.success = "True";
+            result.data["sesKey"] = Guid.NewGuid().ToString();
             return result;
         }
 
@@ -524,13 +527,16 @@ namespace SCHUniversalTaskscheduler
 
             try
             {
-                WriteToLog("In CreateKinesisProject: ", "L2");
-                string projectName = dtProject.Rows[0]["KinesisProjectName"].ToString();
-                string surveyURL = dtProject.Rows[0]["SurveyURL"].ToString() + ConfigurationManager.AppSettings["KinesisSurveyParameters"];
-                string datapointsJsonString = "{\"sesKey\":\"" + kinesisSesKey + "\",\"settings\":{\"name\":\"" + projectName + "\",\"url\":\"" + surveyURL + "\",\"defaultMaxParticipation\":\"1\"}}";
-                string postData = string.Format("method=integration.project.create&data={0}", datapointsJsonString);
+                ////WriteToLog("In CreateKinesisProject: ", "L2");
+                ////string projectName = dtProject.Rows[0]["KinesisProjectName"].ToString();
+                ////string surveyURL = dtProject.Rows[0]["SurveyURL"].ToString() + ConfigurationManager.AppSettings["KinesisSurveyParameters"];
+                ////string datapointsJsonString = "{\"sesKey\":\"" + kinesisSesKey + "\",\"settings\":{\"name\":\"" + projectName + "\",\"url\":\"" + surveyURL + "\",\"defaultMaxParticipation\":\"1\"}}";
+                ////string postData = string.Format("method=integration.project.create&data={0}", datapointsJsonString);
 
-                result = RunKinesisPanelAPI(postData);
+                ////result = RunKinesisPanelAPI(postData);
+
+                result.success = "True";
+                result.data["projectid"] = Guid.NewGuid().ToString();
             }
             catch (Exception ex)
             {
@@ -547,15 +553,18 @@ namespace SCHUniversalTaskscheduler
             try
             {
 
-                string projectId = dtProject.Rows[0]["KinesisProjectId"].ToString();
+                ////string projectId = dtProject.Rows[0]["KinesisProjectId"].ToString();
 
 
-                //Add a new column for points in DB for each projects. Calculate this based on LOI. take points from DB
+                //////Add a new column for points in DB for each projects. Calculate this based on LOI. take points from DB
 
-                string datapointsJsonString = "{\"sesKey\":\"" + kinesisSesKey + "\",\"projectid\":" + projectId + "}";
-                string postData = string.Format("method=integration.project.select&data={0}", datapointsJsonString);
+                ////string datapointsJsonString = "{\"sesKey\":\"" + kinesisSesKey + "\",\"projectid\":" + projectId + "}";
+                ////string postData = string.Format("method=integration.project.select&data={0}", datapointsJsonString);
 
-                result = RunKinesisPanelAPI(postData);
+                ////result = RunKinesisPanelAPI(postData);
+
+                result.success = "True";
+                result.data["projectid"] = Guid.NewGuid().ToString();
             }
             catch (Exception ex)
             {
@@ -571,18 +580,21 @@ namespace SCHUniversalTaskscheduler
 
             try
             {
-                WriteToLog("In CreateKinesisSample: ", "L2");
-                StringBuilder sampleIds = new StringBuilder();
-                string sampleName = "SCH Universal Sample " + dtProject.Rows[0]["QueryBatch"].ToString();
-                foreach (DataRow row in dtProject.Rows)
-                {
-                    sampleIds.Append(string.Format("\"{0}\",", row["KinesisIdentifier"]));
-                }
+                ////WriteToLog("In CreateKinesisSample: ", "L2");
+                ////StringBuilder sampleIds = new StringBuilder();
+                ////string sampleName = "SCH Universal Sample " + dtProject.Rows[0]["QueryBatch"].ToString();
+                ////foreach (DataRow row in dtProject.Rows)
+                ////{
+                ////    sampleIds.Append(string.Format("\"{0}\",", row["KinesisIdentifier"]));
+                ////}
 
-                string datapointsJsonString = "{\"sesKey\":\"" + kinesisSesKey + "\",\"name\":\"" + sampleName + "\",\"description\":\"SCH Universal Survey\",\"identifiers\":[" + sampleIds.ToString().TrimEnd(',') + "]}";
-                string postData = string.Format("method=integration.sample.create&data={0}", datapointsJsonString);
+                ////string datapointsJsonString = "{\"sesKey\":\"" + kinesisSesKey + "\",\"name\":\"" + sampleName + "\",\"description\":\"SCH Universal Survey\",\"identifiers\":[" + sampleIds.ToString().TrimEnd(',') + "]}";
+                ////string postData = string.Format("method=integration.sample.create&data={0}", datapointsJsonString);
 
-                result = RunKinesisPanelAPI(postData);
+                ////result = RunKinesisPanelAPI(postData);
+
+                result.success = "True";
+                result.data["sampleid"] = Guid.NewGuid().ToString();
             }
             catch (Exception ex)
             {
@@ -597,30 +609,33 @@ namespace SCHUniversalTaskscheduler
             KinesisAPIResponse result = new KinesisAPIResponse();
             try
             {
-                WriteToLog("In CreateKinesisCampaign: ", "L2");
-                DateTime eastern = TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.UtcNow, "Eastern Standard Time");
-                string campaignSenderNameKey = "CampaignSenderName" + dtProject.Rows[0]["PanelId"].ToString();
-                string campaignSenderEmailKey = "CampaignSenderEmail" + dtProject.Rows[0]["PanelId"].ToString();
-                string campaignSenderName = ConfigurationManager.AppSettings[campaignSenderNameKey];
-                string campaignSenderEmail = ConfigurationManager.AppSettings[campaignSenderEmailKey];
-                string campaignEmailSubject = dtProject.Rows[0]["EmailSubject"].ToString();
-                string invitationTemplate = dtProject.Rows[0]["EmailTemplate"].ToString();
-                string loi = dtProject.Rows[0]["LOI"].ToString();
-                string reward = dtProject.Rows[0]["Reward"].ToString();
-                string rewardPoints = dtProject.Rows[0]["RewardPoints"].ToString();
-                string referenceCode = dtProject.Rows[0]["ReferenceCode"].ToString();
-                string surveyTopic = dtProject.Rows[0]["SurveyTopic"].ToString();
-                string rewardPoint = (Convert.ToDecimal(reward) * 10).ToString();
-                string templatePath = Path.GetFullPath(System.AppDomain.CurrentDomain.BaseDirectory);
-                TextReader tr = new StreamReader(templatePath + @"\" + invitationTemplate);
+                ////    WriteToLog("In CreateKinesisCampaign: ", "L2");
+                ////    DateTime eastern = TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.UtcNow, "Eastern Standard Time");
+                ////    string campaignSenderNameKey = "CampaignSenderName" + dtProject.Rows[0]["PanelId"].ToString();
+                ////    string campaignSenderEmailKey = "CampaignSenderEmail" + dtProject.Rows[0]["PanelId"].ToString();
+                ////    string campaignSenderName = ConfigurationManager.AppSettings[campaignSenderNameKey];
+                ////    string campaignSenderEmail = ConfigurationManager.AppSettings[campaignSenderEmailKey];
+                ////    string campaignEmailSubject = dtProject.Rows[0]["EmailSubject"].ToString();
+                ////    string invitationTemplate = dtProject.Rows[0]["EmailTemplate"].ToString();
+                ////    string loi = dtProject.Rows[0]["LOI"].ToString();
+                ////    string reward = dtProject.Rows[0]["Reward"].ToString();
+                ////    string rewardPoints = dtProject.Rows[0]["RewardPoints"].ToString();
+                ////    string referenceCode = dtProject.Rows[0]["ReferenceCode"].ToString();
+                ////    string surveyTopic = dtProject.Rows[0]["SurveyTopic"].ToString();
+                ////    string rewardPoint = (Convert.ToDecimal(reward) * 10).ToString();
+                ////    string templatePath = Path.GetFullPath(System.AppDomain.CurrentDomain.BaseDirectory);
+                ////    TextReader tr = new StreamReader(templatePath + @"\" + invitationTemplate);
 
-                string content = tr.ReadToEnd();
-                content = content.Replace("\r", string.Empty).Replace("\n", string.Empty).Replace("{LOI}", loi).Replace("{REWARD}", reward).Replace("{REWARD POINT}", rewardPoint).Replace("{REFCODE}", referenceCode).Replace("{TOPIC}", surveyTopic);
+                ////    string content = tr.ReadToEnd();
+                ////    content = content.Replace("\r", string.Empty).Replace("\n", string.Empty).Replace("{LOI}", loi).Replace("{REWARD}", reward).Replace("{REWARD POINT}", rewardPoint).Replace("{REFCODE}", referenceCode).Replace("{TOPIC}", surveyTopic);
 
-                string datapointsJsonString = "{\"sesKey\": \"" + kinesisSesKey + "\",\"settings\": {\"name\": \"SCH Campaign\",\"startTime\": \"" + eastern + "\",\"pointsCompleted\":\"" + rewardPoints + "\",\"type\": \"html\",\"senderName\": \"" + campaignSenderName + "\",\"senderEmailAddress\": \"" + campaignSenderEmail + "\"},\"messages\": [{\"subject\": \"" + campaignEmailSubject + "\",\"content\": \"" + content + "\",\"surveyLinkText\": \"Click Here\",\"optoutLinkText\": \"Click Here\",\"locale\":" + ConfigurationManager.AppSettings["Locale"] + ",\"replyToEmailAddress\": \"" + campaignSenderEmail + "\"}],\"sampleids\": [" + kinesisSampleId.ToString() + "]}";
-                string postData = string.Format("method=integration.campaign.create&data={0}", datapointsJsonString);
+                ////    string datapointsJsonString = "{\"sesKey\": \"" + kinesisSesKey + "\",\"settings\": {\"name\": \"SCH Campaign\",\"startTime\": \"" + eastern + "\",\"pointsCompleted\":\"" + rewardPoints + "\",\"type\": \"html\",\"senderName\": \"" + campaignSenderName + "\",\"senderEmailAddress\": \"" + campaignSenderEmail + "\"},\"messages\": [{\"subject\": \"" + campaignEmailSubject + "\",\"content\": \"" + content + "\",\"surveyLinkText\": \"Click Here\",\"optoutLinkText\": \"Click Here\",\"locale\":" + ConfigurationManager.AppSettings["Locale"] + ",\"replyToEmailAddress\": \"" + campaignSenderEmail + "\"}],\"sampleids\": [" + kinesisSampleId.ToString() + "]}";
+                ////    string postData = string.Format("method=integration.campaign.create&data={0}", datapointsJsonString);
 
-                result = RunKinesisPanelAPI(postData);
+                ////    result = RunKinesisPanelAPI(postData);
+
+                result.success = "True";
+                result.data["campainid"] = Guid.NewGuid().ToString();
 
             }
             catch (Exception ex)
@@ -637,10 +652,12 @@ namespace SCHUniversalTaskscheduler
 
             try
             {
-                string datapointsJsonString = "{\"sesKey\":\"" + kinesisSesKey + "\",\"panelid\":" + panelId + "}";
-                string postData = string.Format("method=integration.panel.select&data={0}", datapointsJsonString);
+                ////string datapointsJsonString = "{\"sesKey\":\"" + kinesisSesKey + "\",\"panelid\":" + panelId + "}";
+                ////string postData = string.Format("method=integration.panel.select&data={0}", datapointsJsonString);
 
-                result = RunKinesisPanelAPI(postData);
+                ////result = RunKinesisPanelAPI(postData);
+
+                result.success = "True";
             }
             catch (Exception ex)
             {
@@ -658,10 +675,12 @@ namespace SCHUniversalTaskscheduler
 
                 //Add a new column for points in DB for each projects. Calculate this based on LOI. take points from DB
 
-                string datapointsJsonString = "{\"sesKey\":\"" + kinesisSesKey + "\",\"projectid\":" + projectId + "}";
-                string postData = string.Format("method=integration.project.close&data={0}", datapointsJsonString);
+                ////string datapointsJsonString = "{\"sesKey\":\"" + kinesisSesKey + "\",\"projectid\":" + projectId + "}";
+                ////string postData = string.Format("method=integration.project.close&data={0}", datapointsJsonString);
 
-                result = RunKinesisPanelAPI(postData);
+                ////result = RunKinesisPanelAPI(postData);
+
+                result.success = "True";
             }
             catch (Exception ex)
             {
@@ -677,45 +696,46 @@ namespace SCHUniversalTaskscheduler
             try
             {
                 WriteToLog("In CreateKinesisReminder: ", "L2");
-                DateTime eastern = TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.UtcNow, "Eastern Standard Time");
-                string campaignSenderNameKey = "CampaignSenderName" + ConfigurationManager.AppSettings["panelId"];
-                string campaignSenderEmailKey = "CampaignSenderEmail" + ConfigurationManager.AppSettings["panelId"];
-                string campaignSenderName = ConfigurationManager.AppSettings[campaignSenderNameKey];
-                string campaignSenderEmail = ConfigurationManager.AppSettings[campaignSenderEmailKey];
-                string campaignEmailSubject = dtReminder.Rows[0]["EmailSubject"].ToString();
-                string invitationTemplate = "Reminder-" + ConfigurationManager.AppSettings["panelId"] + ".htm";
-                string loi = dtReminder.Rows[0]["LOI"].ToString();
-                string reward = dtReminder.Rows[0]["Reward"].ToString();
-                string rewardPoints = dtReminder.Rows[0]["RewardPoints"].ToString();
-                string referenceCode = dtReminder.Rows[0]["ReferenceCode"].ToString();
-                string surveyTopic = dtReminder.Rows[0]["SurveyTopic"].ToString();
-                string campaignId = dtReminder.Rows[0]["CampaignId"].ToString();
-                string sampleId = dtReminder.Rows[0]["SampleId"].ToString();
-                string rewardPoint = (Convert.ToDecimal(reward) * 10).ToString();
-                string templatePath = Path.GetFullPath(System.AppDomain.CurrentDomain.BaseDirectory);
-                TextReader tr = new StreamReader(templatePath + @"\" + invitationTemplate);
+                ////DateTime eastern = TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.UtcNow, "Eastern Standard Time");
+                ////string campaignSenderNameKey = "CampaignSenderName" + ConfigurationManager.AppSettings["panelId"];
+                ////string campaignSenderEmailKey = "CampaignSenderEmail" + ConfigurationManager.AppSettings["panelId"];
+                ////string campaignSenderName = ConfigurationManager.AppSettings[campaignSenderNameKey];
+                ////string campaignSenderEmail = ConfigurationManager.AppSettings[campaignSenderEmailKey];
+                ////string campaignEmailSubject = dtReminder.Rows[0]["EmailSubject"].ToString();
+                ////string invitationTemplate = "Reminder-" + ConfigurationManager.AppSettings["panelId"] + ".htm";
+                ////string loi = dtReminder.Rows[0]["LOI"].ToString();
+                ////string reward = dtReminder.Rows[0]["Reward"].ToString();
+                ////string rewardPoints = dtReminder.Rows[0]["RewardPoints"].ToString();
+                ////string referenceCode = dtReminder.Rows[0]["ReferenceCode"].ToString();
+                ////string surveyTopic = dtReminder.Rows[0]["SurveyTopic"].ToString();
+                ////string campaignId = dtReminder.Rows[0]["CampaignId"].ToString();
+                ////string sampleId = dtReminder.Rows[0]["SampleId"].ToString();
+                ////string rewardPoint = (Convert.ToDecimal(reward) * 10).ToString();
+                ////string templatePath = Path.GetFullPath(System.AppDomain.CurrentDomain.BaseDirectory);
+                ////TextReader tr = new StreamReader(templatePath + @"\" + invitationTemplate);
 
-                string local = ConfigurationManager.AppSettings["LocaleRem"];
-                string[] locale = local.Split(',');
-                string messageArray = string.Empty;
+                ////string local = ConfigurationManager.AppSettings["LocaleRem"];
+                ////string[] locale = local.Split(',');
+                ////string messageArray = string.Empty;
 
-                string content = tr.ReadToEnd();
-                content = content.Replace("\r", string.Empty).Replace("\n", string.Empty).Replace("{LOI}", loi).Replace("{REWARD}", reward).Replace("{REWARD POINT}", rewardPoint).Replace("{REFCODE}", referenceCode).Replace("{TOPIC}", surveyTopic);
+                ////string content = tr.ReadToEnd();
+                ////content = content.Replace("\r", string.Empty).Replace("\n", string.Empty).Replace("{LOI}", loi).Replace("{REWARD}", reward).Replace("{REWARD POINT}", rewardPoint).Replace("{REFCODE}", referenceCode).Replace("{TOPIC}", surveyTopic);
 
-                foreach (string loc in locale)
-                {
-                    if (messageArray != string.Empty)
-                    {
-                        messageArray = messageArray + ",";
-                    }
-                    messageArray = messageArray + " {\"subject\": \"" + campaignEmailSubject + "\",\"content\": \"" + content + "\",\"locale\":" + loc + "}";
-                }
+                ////foreach (string loc in locale)
+                ////{
+                ////    if (messageArray != string.Empty)
+                ////    {
+                ////        messageArray = messageArray + ",";
+                ////    }
+                ////    messageArray = messageArray + " {\"subject\": \"" + campaignEmailSubject + "\",\"content\": \"" + content + "\",\"locale\":" + loc + "}";
+                ////}
 
-                string datapointsJsonString = "{\"sesKey\": \"" + kinesisSesKey + "\",\"campaignid\":" + campaignId + ",\"messages\": [" + messageArray + "], \"startDate\":  \"" + eastern + "\",\"sampleids\": [" + sampleId + "]}";
-                string postData = string.Format("method=integration.reminder.create&data={0}", datapointsJsonString);
+                ////string datapointsJsonString = "{\"sesKey\": \"" + kinesisSesKey + "\",\"campaignid\":" + campaignId + ",\"messages\": [" + messageArray + "], \"startDate\":  \"" + eastern + "\",\"sampleids\": [" + sampleId + "]}";
+                ////string postData = string.Format("method=integration.reminder.create&data={0}", datapointsJsonString);
 
-                WriteToLog(" CreateKinesisReminder: Request" + postData, "L2");
-                result = RunKinesisPanelAPI(postData);
+                ////WriteToLog(" CreateKinesisReminder: Request" + postData, "L2");
+                ////result = RunKinesisPanelAPI(postData);
+                result.success = "True";
                 WriteToLog("CreateKinesisReminder: Response" + result, "L2");
 
             }
@@ -775,10 +795,12 @@ namespace SCHUniversalTaskscheduler
             try
             {
                 WriteToLog("AddRewardPoint: ", "L2");
-                string datapointsJsonString = "{\"sesKey\":\"" + kinesisSesKey + "\",\"index\":\"" + identifier + "\",\"points\":\"" + rewardPoint + "\",\"note\":\"" + description + "\"}";
-                string postData = string.Format("method=integration.panelist.rewardPointsAdd&data={0}", datapointsJsonString);
+                ////string datapointsJsonString = "{\"sesKey\":\"" + kinesisSesKey + "\",\"index\":\"" + identifier + "\",\"points\":\"" + rewardPoint + "\",\"note\":\"" + description + "\"}";
+                ////string postData = string.Format("method=integration.panelist.rewardPointsAdd&data={0}", datapointsJsonString);
 
-                result = RunKinesisPanelAPI(postData);
+                ////result = RunKinesisPanelAPI(postData);
+
+                result.success = "True";
             }
             catch (Exception ex)
             {

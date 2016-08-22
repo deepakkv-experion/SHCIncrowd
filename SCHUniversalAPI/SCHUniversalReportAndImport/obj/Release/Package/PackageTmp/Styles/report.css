@@ -1,0 +1,144 @@
+body
+{
+	background-color:#80C694;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+    color:Black;
+    font-size:12px;  
+}
+.gridRowStyle
+{
+    background-color:#F2EFFB;
+    padding:5px;
+}
+
+.gridAltRowStyle
+{
+    background-color:#E6E0F8;
+}
+
+.gridHeading
+{
+    background-color:#DBE5F1;
+}
+.main
+{
+    width:30%;   
+    background: none repeat scroll 0 0  #088A85;    
+}   
+
+.uploader {    
+	font-size: 12px;
+	font-weight:bold;
+}
+
+.button {    
+    font-size: 12px;
+	font-weight:bold;	
+}
+
+.loginbutton
+{
+	font-size: 12px;
+	font-weight:bold;
+	padding:5px;
+	
+}
+
+.fileupload
+{
+    color:Black;
+    font-size:12px;    
+}
+
+.rounded
+{
+    border-radius: 4px 4px 4px 4px;
+    background-color: #ffffff;    
+    border: 1px solid #c5c5dd;     
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+   
+}
+
+.toplinks a 
+{
+    color:#ffffff !important;
+}
+
+.toplinks a:hover 
+{
+    color:blue !important;
+}
+
+.toplinks a:visited 
+{
+    color:#ffffff;
+}
+
+
+
+
+@media only screen and (min-width: 210px) and (max-width: 364px), only screen and (min-device-width: 210px) and (max-device-width: 364px) {   
+
+	.main
+	{
+		width:100%;   
+		background: none repeat scroll 0 0 #FBFBFB;    
+	}  
+
+    .rightlogo img
+    {      
+        width:180px; 
+    }    
+
+    .button {    
+		font-size: 14px;
+		font-weight:bold;
+		padding:5px;	
+	}
+}
+
+@media only screen and (min-width: 365px) and (max-width: 619px), only screen and (min-device-width: 360px) and (max-device-width: 619px) 
+{
+	.main
+	{
+		width:100%;   
+		background: none repeat scroll 0 0 #FBFBFB;    
+	}  
+	
+   .rightlogo img
+    {      
+        width:200px; 
+    }
+    
+    .button {    
+		font-size: 14px;
+		font-weight:bold;
+		padding:5px;	
+	}
+}
+
+@media only screen and (min-device-width : 620px) and (max-device-width : 849px), only screen and (min-width: 620px) and (max-width: 849px) 
+{  
+	.main
+	{
+		width:90%;   
+		background: none repeat scroll 0 0 #FBFBFB;    
+	}  
+	
+    .rightlogo img
+    {      
+        width:200px; 
+    }
+}	
+
+
+@media only screen and (min-device-width : 850px) and (max-device-width : 1024px), only screen and (min-width: 850px) and (max-width: 1024px) 
+{   
+   .main
+	{
+		width:80%;   
+		background: none repeat scroll 0 0 #FBFBFB;    
+	}  
+    
+}
+

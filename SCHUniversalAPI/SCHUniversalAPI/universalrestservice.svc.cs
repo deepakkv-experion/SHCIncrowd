@@ -15,6 +15,9 @@ using System.ServiceModel.Web;
 using System.Net;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Activation;
+using SCHUniversalAPI.Resource;
+using System.Dynamic;
+using System.Reflection;
 
 namespace SCHUniversalAPI
 {
@@ -71,6 +74,7 @@ namespace SCHUniversalAPI
             ////return ParseJsonMessage(response);
             //  return response;
             // New Requirement
+
             return GetCurrentCart(response);
         }
         public Stream UpdateProject(string projectId, Project projectData)
@@ -292,28 +296,56 @@ namespace SCHUniversalAPI
         public Stream UpdateQuery(SHCUniversalModel updatingValues)
         {
             WriteToLog(" In UpdateQuery", "L2");
-            if (updatingValues != null)
+            if (AuthorizeRequest())
             {
-                if (updatingValues.newhonorarium != null && updatingValues.newhonorarium.ToLower().Equals('a') || updatingValues.newhonorarium.ToLower().Equals('b') || updatingValues.newhonorarium.ToLower().Equals('c') || updatingValues.newhonorarium.ToLower().Equals('d'))
+                if (updatingValues != null)
                 {
-                    return GetCurrentCart(new { success = false, error = "Invalid honorarium level" });
+                    if (updatingValues.newhonorarium != null)
+                    {
+                        int stat = 0;
+                        if (updatingValues.newhonorarium.ToLower().Equals("a"))
+                        {
+                            stat = 1;
+                        }
+                        if (updatingValues.newhonorarium.ToLower().Equals("b"))
+                        {
+                            stat = 1;
+                        }
+                        if (updatingValues.newhonorarium.ToLower().Equals("c"))
+                        {
+                            stat = 1;
+                        }
+                        if (updatingValues.newhonorarium.ToLower().Equals("d"))
+                        {
+                            stat = 1;
+                        }
+                        if (stat.Equals(0))
+                        {
+                            return GetCurrentCart(new { success = false, error = "Invalid honorarium level" });
+                        }
+                    }
+
+                    dynamic response;
+                    int logId = 0;
+                    logId = SaveRequestResponseLog("0", JsonConvert.SerializeObject(updatingValues));
+                    response = UpdateRequiredNForQueryId(updatingValues);
+                    if (response.success.Equals(true))
+                    {
+                        SaveRequestResponseLog(logId.ToString(), GenerateSuccessResponse(response));
+                        WriteToLog("Succesfully updated", "L2");
+                        return GetCurrentCart(response);
+                    }
+
+                    WriteToLog("Error in update query :" + response.error, "L2");
+                    return GetCurrentCart(new { success = false, error = response.error });
                 }
 
-                dynamic response;
-                int logId = 0;
-                logId = SaveRequestResponseLog("0", JsonConvert.SerializeObject(updatingValues));
-                response = UpdateRequiredNForQueryId(updatingValues);
-                if (response.success.Equals(true))
-                {
-                    SaveRequestResponseLog(logId.ToString(), GenerateSuccessResponse(response));
-                    WriteToLog("Succesfully updated", "L2");
-                    return GetCurrentCart(response);
-                }
-
-                return GetCurrentCart(new { success = false, error = response.error });
+                WriteToLog("Failed to update", "L2");
+                return GetCurrentCart(new { success = false, error = "Failed to update" });
             }
 
-            return GetCurrentCart(new { success = false, error = "Failed to update" });
+            WriteToLog("UpdateQuery : Authorization Failed", "L1");
+            return GetCurrentCart(new { success = false, error = "Authentication Failed." });
         }
 
         /// <summary>
@@ -324,20 +356,31 @@ namespace SCHUniversalAPI
         public Stream GetProjectStatus(string projectId)
         {
             WriteToLog(" In Get Project Status", "L2");
-            int logId = 0;
-            dynamic response;
-            if (!string.IsNullOrEmpty(projectId))
+            if (AuthorizeRequest())
             {
-                response = GetProjectStatusById(projectId);
-                if (response.success.Equals(true))
+                dynamic response;
+                if (!string.IsNullOrEmpty(projectId))
                 {
-                    return GetCurrentCart(response);
+                    int result;
+                    if (!int.TryParse(projectId, out result))
+                    {
+                        return GetCurrentCart(new { success = false, error = ResourceFileConfig.GetLocalisedString("InvalidProjectId") });
+                    }
+
+                    response = GetProjectStatusById(projectId);
+                    if (response.success.Equals(true))
+                    {
+                        return GetCurrentCart(response);
+                    }
+
+                    return GetCurrentCart(new { success = false, error = response.error });
                 }
 
-                return GetCurrentCart(new { success = false, error = response.error });
+                return GetCurrentCart(new { success = false, error = ResourceFileConfig.GetLocalisedString("InvalidProjectId") });
             }
 
-            return GetCurrentCart(new { success = false, error = "Invalid projectId" });
+            WriteToLog("Get Project Status : Authorization Failed", "L1");
+            return GetCurrentCart(new { success = false, error = "Authentication Failed." });
         }
 
         /// <summary>
@@ -358,11 +401,11 @@ namespace SCHUniversalAPI
                 cmd.Parameters.Add(new SqlParameter("@projectId", projectId));
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 adapter.Fill(dsProject);
-                if (dsProject.Tables.Count > 0)
+                if (dsProject.Tables.Count > 1)
                 {
                     var projectStatusResponse = new ProjectStatusResponse();
                     projectStatusResponse = new ProjectStatusResponse() { success = true, projectstatus = new List<ProjectStatusRequest>() };
-                    for (int i = 0; i < dsProject.Tables.Count; i++)
+                    for (int i = 1; i < dsProject.Tables.Count; i++)
                     {
                         projectStatusResponse.projectstatus.Add(new ProjectStatusRequest
                         {
@@ -377,7 +420,12 @@ namespace SCHUniversalAPI
                     return projectStatusResponse;
                 }
 
-                return new { success = false, error = "Error while retreiving values from database" };
+                if (Convert.ToInt32(dsProject.Tables[0].Rows[0][0]).Equals(0))
+                {
+                    return new { success = false, error = ResourceFileConfig.GetLocalisedString("NoProjectofProjectId") + projectId };
+                }
+
+                return new { success = false, error = ResourceFileConfig.GetLocalisedString("NoQueryUnderProjectId") + projectId };
 
             }
             catch (Exception ex)
@@ -396,7 +444,7 @@ namespace SCHUniversalAPI
         /// </summary>
         /// <param name="updatingValues">The updating values.</param>
         /// <returns> returns object</returns>
-        public object UpdateRequiredNForQueryId(SHCUniversalModel updatingValues)
+        public dynamic UpdateRequiredNForQueryId(SHCUniversalModel updatingValues)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["conUniversal"].ToString());
             try
@@ -406,7 +454,8 @@ namespace SCHUniversalAPI
                 SqlCommand cmd = new SqlCommand("UpdateQuery", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add(new SqlParameter("@QueryId", updatingValues.queryid));
-                cmd.Parameters.Add(new SqlParameter("@NewHonorium", updatingValues.newhonorarium ?? updatingValues.newhonorarium.ToLower()));
+                cmd.Parameters.Add(new SqlParameter("@NewN", updatingValues.newrequiredN == 0 ? null : (int?)updatingValues.newrequiredN));
+                cmd.Parameters.Add(new SqlParameter("@NewHonorium", updatingValues.newhonorarium != null ? updatingValues.newhonorarium.ToLower() : null));
                 cmd.Parameters.Add(new SqlParameter("@NewIncidence", updatingValues.newincidence));
                 int result = cmd.ExecuteNonQuery();
                 if (result > 0)
@@ -414,7 +463,7 @@ namespace SCHUniversalAPI
                     return new { success = true };
                 }
 
-                return new { success = false, error = "Failed to update" };
+                return new { success = false, error = ResourceFileConfig.GetLocalisedString("FailedToUpdate") };
             }
             catch (Exception ex)
             {
@@ -438,7 +487,6 @@ namespace SCHUniversalAPI
         }
 
         #endregion
-
 
         #region DBCall
         private string SaveReminderToDB(string queryId)
@@ -549,190 +597,210 @@ namespace SCHUniversalAPI
         public string GenerateAndSaveQuery(Query queryData)
         {
             string response = "false";
-            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["conUniversal"].ToString());
-
-            try
+            if (queryData.querycondition.FirstOrDefault(item => item.datapointid == ConfigurationManager.AppSettings["SpecialtyId"]).datapointoptions.Any())
             {
-                WriteToLog("In GenerateAndSaveQuery: ", "L2");
-                // string datapointValues = string.Empty;
-                string queryCondition = string.Empty;
-                string datapointId = string.Empty;
-                int exclusionCount = 0;
+                SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["conUniversal"].ToString());
 
-                DataSet dsQuery = new DataSet();
-                if (queryData != null && queryData.querycondition.Where(item => item.datapointid == ConfigurationManager.AppSettings["SpecialtyId"]).Any() && queryData.projectid != null)
+                try
                 {
+                    WriteToLog("In GenerateAndSaveQuery: ", "L2");
+                    // string datapointValues = string.Empty;
+                    string queryCondition = string.Empty;
+                    string datapointId = string.Empty;
+                    int exclusionCount = 0;
 
-                    for (int i = 0; i < queryData.querycondition.Count; i++)
+                    DataSet dsQuery = new DataSet();
+                    if (queryData != null && queryData.querycondition.Where(item => item.datapointid == ConfigurationManager.AppSettings["SpecialtyId"]).Any() && queryData.projectid != null)
                     {
-                        //  datapointValues = string.Join(",", queryData.querycondition[i].datapointoptions);
-                        string datapointValues = string.Empty;
-                        foreach (var option in queryData.querycondition[i].datapointoptions)
+
+                        for (int i = 0; i < queryData.querycondition.Count; i++)
                         {
-                            datapointValues = datapointValues + "'" + option + "',";
+                            //  datapointValues = string.Join(",", queryData.querycondition[i].datapointoptions);
+                            string datapointValues = string.Empty;
+                            foreach (var option in queryData.querycondition[i].datapointoptions)
+                            {
+                                datapointValues = datapointValues + "'" + option + "',";
+                            }
+
+                            if (!string.IsNullOrEmpty(datapointValues))
+                            {
+                                datapointValues = datapointValues.Remove(datapointValues.Length - 1);
+                                if (queryCondition == string.Empty)
+                                {
+                                    queryCondition = " (DataPointId = " + queryData.querycondition[i].datapointid + " AND OptionId IN(" + datapointValues + ") ) ";
+                                }
+                                else
+                                {
+                                    queryCondition = queryCondition + "AND EXISTS (SELECT * FROM PanelistMaster P" + i + " WHERE P.Identifier=P" + i + ".Identifier AND DataPointId = " + queryData.querycondition[i].datapointid + " AND OptionId IN(" + datapointValues + ")) ";
+                                }
+                            }
                         }
 
-                        datapointValues = datapointValues.Remove(datapointValues.Length - 1);
-                        if (queryCondition == string.Empty)
+                        // queryCondition = queryCondition + " AND " + ConfigurationManager.AppSettings["SpecializationDatapoint"] + " = 10 AND Option = " + queryData.specialty;
+                    }
+
+                    // New Requirement
+                    //Include NPI
+                    if (queryData.inclusionnpi != null && queryData.inclusionnpi.Count > 0)
+                    {
+                        //If strings are in both Inclusion and Exclusion – system behaviour will be that the exclusion list takes priority.
+                        queryData.inclusionnpi.RemoveAll(x => queryData.exclusions.Any(y => y == x));
+                        string inclusionnpi = string.Empty;
+                        foreach (var excl in queryData.inclusionnpi)
                         {
-                            queryCondition = " (DataPointId = " + queryData.querycondition[i].datapointid + " AND OptionId IN(" + datapointValues + ") ) ";
+                            inclusionnpi = inclusionnpi + "'" + excl + "',";
+                        }
+                        if (!string.IsNullOrEmpty(inclusionnpi))
+                        {
+                            inclusionnpi = inclusionnpi.Remove(inclusionnpi.Length - 1);
+                            if (queryCondition != string.Empty)
+                            {
+                                queryCondition = queryCondition + "AND EXISTS (SELECT * FROM PanelistMaster EX1 WHERE P.Identifier=EX1.Identifier AND DataPointId = " + ConfigurationManager.AppSettings["ExclusionId"] + " AND OptionId IN(" + inclusionnpi + ")) ";
+                            }
+                            else
+                            {
+                                queryCondition = " (DataPointId = " + ConfigurationManager.AppSettings["ExclusionId"] + " AND OptionId IN(" + inclusionnpi + ") ) ";
+                            }
+                        }
+                    }
+
+                    // New Requirement
+                    //Include Identifier
+                    if (queryData.inclusionidentifiers != null && queryData.inclusionidentifiers.Count > 0)
+                    {
+                        //If strings are in both Inclusion and Exclusion – system behaviour will be that the exclusion list takes priority.
+                        queryData.inclusionidentifiers.RemoveAll(x => queryData.exclusionidentifiers.Any(y => y == x));
+                        string inclusionidentifiers = string.Empty;
+                        foreach (var excl in queryData.inclusionidentifiers)
+                        {
+                            inclusionidentifiers = inclusionidentifiers + "'" + excl + "',";
+                        }
+                        if (!string.IsNullOrEmpty(inclusionidentifiers))
+                        {
+                            inclusionidentifiers = inclusionidentifiers.Remove(inclusionidentifiers.Length - 1);
+                            if (queryCondition != string.Empty)
+                            {
+                                queryCondition = queryCondition + "AND EXISTS (SELECT * FROM PanelistMaster INP WHERE P.Identifier=INP.Identifier AND DataPointId = " + ConfigurationManager.AppSettings["IdentifierId"] + " AND OptionId IN(" + inclusionidentifiers + ")) ";
+                            }
+                            else
+                            {
+                                queryCondition = " (DataPointId = " + ConfigurationManager.AppSettings["IdentifierId"] + " AND OptionId IN(" + inclusionidentifiers + ") ) ";
+                            }
+                        }
+                    }
+
+
+                    // New Requirement
+                    // Exclude identifiers
+                    if (queryData.exclusionidentifiers != null && queryData.exclusionidentifiers.Count > 0)
+                    {
+                        exclusionCount += queryData.exclusionidentifiers.Count;
+                        string exclusionidentifiers = string.Empty;
+                        foreach (var excl in queryData.exclusionidentifiers)
+                        {
+                            exclusionidentifiers = exclusionidentifiers + "'" + excl + "',";
+                        }
+
+                        exclusionidentifiers = exclusionidentifiers.Remove(exclusionidentifiers.Length - 1);
+                        if (queryCondition != string.Empty)
+                        {
+                            queryCondition = queryCondition + "AND NOT EXISTS (SELECT * FROM PanelistMaster EX2 WHERE P.Identifier=EX2.Identifier AND DataPointId = " + ConfigurationManager.AppSettings["IdentifierId"] + " AND OptionId IN(" + exclusionidentifiers + ")) ";
                         }
                         else
                         {
-                            queryCondition = queryCondition + "AND EXISTS (SELECT * FROM PanelistMaster P" + i + " WHERE P.Identifier=P" + i + ".Identifier AND DataPointId = " + queryData.querycondition[i].datapointid + " AND OptionId IN(" + datapointValues + ")) ";
+                            queryCondition = " (DataPointId != " + ConfigurationManager.AppSettings["IdentifierId"] + " AND OptionId NOT IN(" + exclusionidentifiers + ") ) ";
                         }
                     }
-
-                    // queryCondition = queryCondition + " AND " + ConfigurationManager.AppSettings["SpecializationDatapoint"] + " = 10 AND Option = " + queryData.specialty;
-                }
-
-                // New Requirement
-                //Include NPI
-                if (queryData.inclusionnpi != null && queryData.inclusionnpi.Count > 0)
-                {
-                    string inclusionnpi = string.Empty;
-                    foreach (var excl in queryData.inclusionnpi)
-                    {
-                        inclusionnpi = inclusionnpi + "'" + excl + "',";
-                    }
-
-                    inclusionnpi = inclusionnpi.Remove(inclusionnpi.Length - 1);
-                    if (queryCondition != string.Empty)
-                    {
-                        queryCondition = queryCondition + "AND EXISTS (SELECT * FROM PanelistMaster EX WHERE P.Identifier=EX.Identifier AND DataPointId = " + ConfigurationManager.AppSettings["ExclusionId"] + " AND OptionId IN(" + inclusionnpi + ")) ";
-                    }
                     else
                     {
-                        queryCondition = " (DataPointId = " + ConfigurationManager.AppSettings["ExclusionId"] + " AND OptionId NOT IN(" + inclusionnpi + ") ) ";
-                    }
-                }
-
-                // New Requirement
-                //Include Identifier
-                if (queryData.inclusionidentifiers != null && queryData.inclusionidentifiers.Count > 0)
-                {
-                    string inclusionidentifiers = string.Empty;
-                    foreach (var excl in queryData.inclusionidentifiers)
-                    {
-                        inclusionidentifiers = inclusionidentifiers + "'" + excl + "',";
+                        exclusionCount = 0;
                     }
 
-                    inclusionidentifiers = inclusionidentifiers.Remove(inclusionidentifiers.Length - 1);
-                    if (queryCondition != string.Empty)
+                    //Exclude NPI
+                    if (queryData.exclusions != null && queryData.exclusions.Count > 0)
                     {
-                        queryCondition = queryCondition + "AND EXISTS (SELECT * FROM PanelistMaster EX WHERE P.Identifier=EX.Identifier AND DataPointId = " + ConfigurationManager.AppSettings["IdentifierId"] + " AND OptionId IN(" + inclusionidentifiers + ")) ";
-                    }
-                    else
-                    {
-                        queryCondition = " (DataPointId = " + ConfigurationManager.AppSettings["IdentifierId"] + " AND OptionId NOT IN(" + inclusionidentifiers + ") ) ";
-                    }
-                }
-
-
-                // New Requirement
-                // Exclude identifiers
-                if (queryData.exclusionidentifiers != null && queryData.exclusionidentifiers.Count > 0)
-                {
-                    exclusionCount += queryData.exclusions.Count;
-                    string exclusionidentifiers = string.Empty;
-                    foreach (var excl in queryData.exclusionidentifiers)
-                    {
-                        exclusionidentifiers = exclusionidentifiers + "'" + excl + "',";
-                    }
-
-                    exclusionidentifiers = exclusionidentifiers.Remove(exclusionidentifiers.Length - 1);
-                    if (queryCondition != string.Empty)
-                    {
-                        queryCondition = queryCondition + "AND NOT EXISTS (SELECT * FROM PanelistMaster EX WHERE P.Identifier=EX.Identifier AND DataPointId = " + ConfigurationManager.AppSettings["IdentifierId"] + " AND OptionId IN(" + exclusionidentifiers + ")) ";
-                    }
-                    else
-                    {
-                        queryCondition = " (DataPointId != " + ConfigurationManager.AppSettings["IdentifierId"] + " AND OptionId NOT IN(" + exclusionidentifiers + ") ) ";
-                    }
-                }
-                else
-                {
-                    exclusionCount = 0;
-                }
-
-                //Exclude NPI
-                if (queryData.exclusions != null && queryData.exclusions.Count > 0)
-                {
-                    exclusionCount += queryData.exclusions.Count;
-                    string exclusion = string.Empty;
-                    foreach (var excl in queryData.exclusions)
-                    {
-                        exclusion = exclusion + "'" + excl + "',";
-                    }
-
-                    exclusion = exclusion.Remove(exclusion.Length - 1);
-                    if (queryCondition != string.Empty)
-                    {
-                        queryCondition = queryCondition + "AND NOT EXISTS (SELECT * FROM PanelistMaster EX WHERE P.Identifier=EX.Identifier AND DataPointId = " + ConfigurationManager.AppSettings["ExclusionId"] + " AND OptionId IN(" + exclusion + ")) ";
-                    }
-                    else
-                    {
-                        queryCondition = " (DataPointId != " + ConfigurationManager.AppSettings["ExclusionId"] + " AND OptionId NOT IN(" + exclusion + ") ) ";
-                    }
-                }
-                else
-                {
-                    exclusionCount = 0;
-                }
-
-                con.Open();
-
-                SqlCommand cmd = new SqlCommand("SaveQueryAndGetProjectStatus", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandTimeout = Convert.ToInt32(ConfigurationManager.AppSettings["CommandTimeOut"]);
-                cmd.Parameters.Add(new SqlParameter("@ProjectId", queryData.projectid));
-                cmd.Parameters.Add(new SqlParameter("@Query", queryCondition));
-                cmd.Parameters.Add(new SqlParameter("@ReqN", queryData.reqn));
-                cmd.Parameters.Add(new SqlParameter("@JsonText", JsonConvert.SerializeObject(queryData)));
-                string specialty = queryData.querycondition.FirstOrDefault(item => item.datapointid == ConfigurationManager.AppSettings["SpecialtyId"]).datapointoptions[0];
-                cmd.Parameters.Add(new SqlParameter("@Speciality", specialty));
-                cmd.Parameters.Add(new SqlParameter("@ExclusionCount", exclusionCount));
-
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                adapter.Fill(dsQuery);
-                if (dsQuery.Tables.Count > 0)
-                {
-                    if (dsQuery.Tables[0].Rows.Count > 0)
-                    {
-                        if (dsQuery.Tables[0].Rows[0][0].ToString() == "close")
+                        exclusionCount += queryData.exclusions.Count;
+                        string exclusion = string.Empty;
+                        foreach (var excl in queryData.exclusions)
                         {
-                            response = GenerateErrorResponseJson(ConfigurationManager.AppSettings["QueryVal"]);
+                            exclusion = exclusion + "'" + excl + "',";
                         }
-                        else if (dsQuery.Tables[0].Rows[0][0].ToString() == "noproject")
+
+                        exclusion = exclusion.Remove(exclusion.Length - 1);
+                        if (queryCondition != string.Empty)
                         {
-                            response = GenerateErrorResponseJson(ConfigurationManager.AppSettings["NoProject"]);
+                            queryCondition = queryCondition + "AND NOT EXISTS (SELECT * FROM PanelistMaster EX WHERE P.Identifier=EX.Identifier AND DataPointId = " + ConfigurationManager.AppSettings["ExclusionId"] + " AND OptionId IN(" + exclusion + ")) ";
                         }
                         else
                         {
-                            //new requirement ( Convert.ToString(dsQuery.Tables[0].Rows[0][2])  (second parameter))
-                            response = SaveRespondents(dsQuery.Tables[0].Rows[0][0].ToString(), Convert.ToString(dsQuery.Tables[0].Rows[0][2]), queryData.projectid, queryData.reqn, queryCondition);
+                            queryCondition = " (DataPointId != " + ConfigurationManager.AppSettings["ExclusionId"] + " AND OptionId NOT IN(" + exclusion + ") ) ";
                         }
                     }
                     else
                     {
-
-                        response = GenerateErrorResponseJson(ConfigurationManager.AppSettings["QueryError"]);
+                        exclusionCount = 0;
                     }
+
+                    con.Open();
+
+                    SqlCommand cmd = new SqlCommand("SaveQueryAndGetProjectStatus", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandTimeout = Convert.ToInt32(ConfigurationManager.AppSettings["CommandTimeOut"]);
+                    cmd.Parameters.Add(new SqlParameter("@ProjectId", queryData.projectid));
+                    cmd.Parameters.Add(new SqlParameter("@Query", queryCondition));
+                    cmd.Parameters.Add(new SqlParameter("@ReqN", queryData.reqn));
+                    cmd.Parameters.Add(new SqlParameter("@JsonText", JsonConvert.SerializeObject(queryData)));
+                    string specialty = queryData.querycondition.FirstOrDefault(item => item.datapointid == ConfigurationManager.AppSettings["SpecialtyId"]).datapointoptions[0];
+                    cmd.Parameters.Add(new SqlParameter("@Speciality", specialty));
+                    cmd.Parameters.Add(new SqlParameter("@ExclusionCount", exclusionCount));
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    adapter.Fill(dsQuery);
+                    if (dsQuery.Tables.Count > 0)
+                    {
+                        if (dsQuery.Tables[0].Rows.Count > 0)
+                        {
+                            if (dsQuery.Tables[0].Rows[0][0].ToString() == "close")
+                            {
+                                response = GenerateErrorResponseJson(ConfigurationManager.AppSettings["QueryVal"]);
+                            }
+                            else if (dsQuery.Tables[0].Rows[0][0].ToString() == "noproject")
+                            {
+                                response = GenerateErrorResponseJson(ConfigurationManager.AppSettings["NoProject"]);
+                            }
+                            else
+                            {
+                                //new requirement ( Convert.ToString(dsQuery.Tables[0].Rows[0][2])  (second parameter))
+                                response = SaveRespondents(dsQuery.Tables[0].Rows[0][0].ToString(), Convert.ToString(dsQuery.Tables[0].Rows[0][2]), queryData.projectid, queryData.reqn, queryCondition);
+                            }
+                        }
+                        else
+                        {
+
+                            response = GenerateErrorResponseJson(ConfigurationManager.AppSettings["QueryError"]);
+                        }
+                    }
+
                 }
 
+                catch (Exception ex)
+                {
+                    WriteToLog("Error in GenerateAndSaveQuery: " + ex.Message, "L1");
+                    response = GenerateErrorResponseJson(ConfigurationManager.AppSettings["QueryError"]);
+                }
+                finally
+                {
+                    con.Close();
+                }
             }
-            catch (Exception ex)
+            else
             {
-                WriteToLog("Error in GenerateAndSaveQuery: " + ex.Message, "L1");
-                response = GenerateErrorResponseJson(ConfigurationManager.AppSettings["QueryError"]);
+                response = GenerateErrorResponseJson(ConfigurationManager.AppSettings["ValSpeciality"]);
             }
-            finally
-            {
-                con.Close();
-            }
+
             return response;
-
         }
+
         public string UpdateProjectStatus(string projectId, ProjectStatus Status)
         {
             string status = string.Empty;
@@ -999,8 +1067,36 @@ namespace SCHUniversalAPI
         }
         #endregion
 
+
+        public static bool IsJson(string input)
+        {
+            input = input.Trim();
+            return input.StartsWith("{") && input.EndsWith("}")
+                   || input.StartsWith("[") && input.EndsWith("]");
+        }
+
+
         public Stream GetCurrentCart(dynamic updatingValues)
         {
+            if (updatingValues.GetType().ToString().Equals("System.String"))
+            {
+                var info = JsonConvert.DeserializeObject(updatingValues);
+                dynamic expandoData = new ExpandoObject();
+                var processedData = expandoData as IDictionary<string, object>;
+                if (info != null)
+                {
+                    var properties = info.Root as IDictionary<string, Newtonsoft.Json.Linq.JToken>;
+                    foreach (var item in properties)
+                    {
+                        processedData[item.Key] = item.Value;
+                    }
+                }
+
+                var infoJson = JsonConvert.SerializeObject(processedData);
+                WebOperationContext.Current.OutgoingResponse.ContentType = "application/json; charset=utf-8";
+                return new MemoryStream(Encoding.UTF8.GetBytes(infoJson));
+            }
+
             var serializer = new JavaScriptSerializer();
             string jsonClient = serializer.Serialize(updatingValues);
             WebOperationContext.Current.OutgoingResponse.ContentType = "application/json; charset=utf-8";

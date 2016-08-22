@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Account/ChangePassword.aspx">
+      <publishTime>07/22/2015 17:15:24</publishTime>
+    </File>
+    <File Include="Account/ChangePasswordSuccess.aspx">
+      <publishTime>07/22/2015 17:15:24</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>07/22/2015 17:15:24</publishTime>
+    </File>
+    <File Include="Account/Register.aspx">
+      <publishTime>07/22/2015 17:15:26</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>07/22/2015 17:15:24</publishTime>
+    </File>
+    <File Include="bin/SCHUniversalReportAndImport.dll">
+      <publishTime>08/09/2016 18:03:43</publishTime>
+    </File>
+    <File Include="images/close.gif">
+      <publishTime>09/23/2015 10:51:18</publishTime>
+    </File>
+    <File Include="images/minus.png">
+      <publishTime>10/30/2015 18:38:28</publishTime>
+    </File>
+    <File Include="images/plus.png">
+      <publishTime>10/30/2015 18:38:28</publishTime>
+    </File>
+    <File Include="importExcel.aspx">
+      <publishTime>08/24/2015 16:18:08</publishTime>
+    </File>
+    <File Include="login.aspx">
+      <publishTime>07/22/2015 17:59:24</publishTime>
+    </File>
+    <File Include="OpinionSite.jpg">
+      <publishTime>07/22/2015 17:15:24</publishTime>
+    </File>
+    <File Include="reports.aspx">
+      <publishTime>08/08/2016 16:16:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.11.1.js">
+      <publishTime>12/09/2015 16:03:34</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>07/22/2015 17:15:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>07/22/2015 17:15:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>07/22/2015 17:15:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui.css">
+      <publishTime>07/22/2015 17:15:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui.js">
+      <publishTime>09/23/2015 10:51:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui.min.js">
+      <publishTime>07/22/2015 17:15:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.js">
+      <publishTime>09/23/2015 10:51:16</publishTime>
+    </File>
+    <File Include="Scripts/zebra_datepicker.js">
+      <publishTime>12/09/2015 16:03:34</publishTime>
+    </File>
+    <File Include="Styles/metallic.css">
+      <publishTime>12/09/2015 16:03:34</publishTime>
+    </File>
+    <File Include="Styles/report.css">
+      <publishTime>07/22/2015 18:24:32</publishTime>
+    </File>
+    <File Include="Styles/Site.css">
+      <publishTime>07/22/2015 17:15:24</publishTime>
+    </File>
+    <File Include="Styles/style.css">
+      <publishTime>07/22/2015 17:15:24</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/22/2016 15:12:39</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

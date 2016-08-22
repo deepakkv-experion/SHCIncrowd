@@ -1,0 +1,5 @@
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalProject\bin\SCHUniversalProject.dll.config
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalProject\bin\SCHUniversalProject.dll
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalProject\bin\SCHUniversalProject.pdb
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalProject\obj\Release\SCHUniversalProject.dll
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalProject\obj\Release\SCHUniversalProject.pdb

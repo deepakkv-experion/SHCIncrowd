@@ -15,7 +15,6 @@ namespace SCHUniversalReportAndImport
 {
     public partial class reports : System.Web.UI.Page
     {
-        
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["Rtname"] != null)
@@ -25,7 +24,7 @@ namespace SCHUniversalReportAndImport
                 {
                     txtDateFrom.Text = System.DateTime.Now.AddHours(-24).ToString("MM/dd/yyyy");
                     txtDateTo.Text = System.DateTime.Now.ToString("MM/dd/yyyy");
-                    GetSearchResult(txtDateFrom.Text, txtDateTo.Text,ddlProjectStatus.SelectedValue);
+                    GetSearchResult(txtDateFrom.Text, txtDateTo.Text, ddlProjectStatus.SelectedValue);
                 }
                 else
                 {
@@ -37,18 +36,18 @@ namespace SCHUniversalReportAndImport
                 Session.Clear();
                 Response.Redirect("login.aspx");
             }
-       
+
         }
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
             string dateFrom = txtDateFrom.Text;
             string dateTo = txtDateTo.Text;
-            GetSearchResult(dateFrom, dateTo,ddlProjectStatus.SelectedValue);
+            GetSearchResult(dateFrom, dateTo, ddlProjectStatus.SelectedValue);
             lblMessage.Text = string.Empty;
         }
 
-        private void GetSearchResult(string dateFrom, string dateTo,string status)
+        private void GetSearchResult(string dateFrom, string dateTo, string status)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["SCHUniversal"].ToString());
             try
@@ -65,16 +64,19 @@ namespace SCHUniversalReportAndImport
                 command.CommandType = CommandType.StoredProcedure;
                 if (!string.IsNullOrEmpty(dateFrom))
                 {
+                    ////dateFrom
                     command.Parameters.Add(new SqlParameter("@DateFrom", dateFrom));
 
                 }
                 if (!string.IsNullOrEmpty(dateTo))
                 {
+                    ////dateTo
                     command.Parameters.Add(new SqlParameter("@DateTo", dateTo));
                 }
                 if (ddlProjectStatus.SelectedValue != "0")
                 {
-                    command.Parameters.Add(new SqlParameter("@StatusId",status));
+                    ////status
+                    command.Parameters.Add(new SqlParameter("@StatusId", status));
                 }
 
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
@@ -82,23 +84,23 @@ namespace SCHUniversalReportAndImport
                 adapter.Fill(dsSearchResult);
                 if (dsSearchResult.Tables.Count > 0)
                 {
-                 
+
                     if (dsSearchResult.Tables[0].Rows.Count > 0)
                     {
                         lblTotRespondent.Text = dsSearchResult.Tables[0].Rows[0]["RespondentsCount"].ToString();
-                        lblTotComplete.Text = dsSearchResult.Tables[0].Rows[0]["CompletesCount"].ToString();                        
+                        lblTotComplete.Text = dsSearchResult.Tables[0].Rows[0]["CompletesCount"].ToString();
                     }
 
-                    if (dsSearchResult.Tables[2].Rows.Count > 0)
-                    {
-                        ViewState["QueryData"] = dsSearchResult.Tables[2];
-                    }
+                    ////if (dsSearchResult.Tables[2].Rows.Count > 0)
+                    ////{
+                    ////    ViewState["QueryData"] = dsSearchResult.Tables[2];
+                    ////}
 
                     // New Requirement
-                    if (dsSearchResult.Tables[3].Rows.Count > 0)
-                    {
-                        ViewState["QueryDataForHono"] = dsSearchResult.Tables[3];
-                    }
+                    ////if (dsSearchResult.Tables[3].Rows.Count > 0)
+                    ////{
+                    ////    ViewState["QueryDataForHono"] = dsSearchResult.Tables[3];
+                    ////}
 
                     if (dsSearchResult.Tables[1].Rows.Count > 0)
                     {
@@ -107,12 +109,12 @@ namespace SCHUniversalReportAndImport
                         lblTotProject.Text = dsSearchResult.Tables[1].Rows.Count.ToString();
                         btnClose.Visible = true;
                     }
-                  
 
-                   
+
+
                 }
 
-             }
+            }
             catch (Exception ex)
             {
             }
@@ -123,7 +125,7 @@ namespace SCHUniversalReportAndImport
         }
 
         protected void grdSearch_RowDataBound(object sender, GridViewRowEventArgs e)
-        {            
+        {
             try
             {
                 if (e.Row.RowType == DataControlRowType.DataRow)
@@ -151,7 +153,7 @@ namespace SCHUniversalReportAndImport
                             {
                                 grdQueryInit(grdQuery);
                             }
-                      
+
                         }
                         else
                         {
@@ -210,8 +212,8 @@ namespace SCHUniversalReportAndImport
             DataSet ds = new DataSet();
             DataTable dt = new DataTable();
             DataRow dr = dt.NewRow();
-            dt.Columns.Add("HonorariumRateLevel");            
-            dt.Columns.Add("Completes Count");         
+            dt.Columns.Add("HonorariumRateLevel");
+            dt.Columns.Add("Completes Count");
             dr["HonorariumRateLevel"] = string.Empty;
             dr["Completes Count"] = string.Empty;
             dt.Rows.Add(dr);
@@ -228,10 +230,10 @@ namespace SCHUniversalReportAndImport
             lblTotRespondent.Text = "0";
             grdSearch.DataSource = null;
             grdSearch.DataBind();
-            
+
         }
 
-    
+
         protected void logOut_Click(object sender, EventArgs e)
         {
             Session.Clear();
@@ -248,7 +250,7 @@ namespace SCHUniversalReportAndImport
             if (e.CommandName == "Close")
             {
                 string projectId = e.CommandArgument.ToString();
-               // UpdateProjectStatus(projectId);
+                // UpdateProjectStatus(projectId);
             }
         }
 
@@ -265,7 +267,7 @@ namespace SCHUniversalReportAndImport
                 {
                     HiddenField hdnProjectId = (HiddenField)row.FindControl("hdnProjectId");
                     projectIds.Append(hdnProjectId.Value);
-                    projectIds.Append(",");               
+                    projectIds.Append(",");
                 }
             }
             string ids = string.Empty;
@@ -278,7 +280,7 @@ namespace SCHUniversalReportAndImport
 
         private void UpdateProjectStatus(string projectIds)
         {
-           
+
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["SCHUniversal"].ToString());
             DataSet ds = new DataSet();
             try
@@ -296,7 +298,7 @@ namespace SCHUniversalReportAndImport
                     string dateTo = txtDateTo.Text;
                     GetSearchResult(dateFrom, dateTo, ddlProjectStatus.SelectedValue);
                     lblMessage.Text = "Project closed successfully.";
-                }               
+                }
 
             }
             catch (Exception ex)

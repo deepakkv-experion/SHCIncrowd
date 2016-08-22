@@ -21,6 +21,11 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -145,6 +150,7 @@
     </Content>
     <None Include="Panelist.xlsx" />
     <None Include="PanelistTemplate.csv" />
+    <None Include="Properties\PublishProfiles\SHCIncrowdReport.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Panelist.xlsx" />

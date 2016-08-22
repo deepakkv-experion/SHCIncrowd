@@ -209,30 +209,36 @@
                                                                 <RowStyle CssClass="gridRowStyle" />
                                                                 <Columns>
                                                                     <asp:BoundField HeaderText="Project Id" DataField="ProjectId" ItemStyle-BorderStyle="Solid" />
-                                                                    <asp:BoundField HeaderText="Kinesis Project Name" DataField="Kinesis Project Name"
-                                                                        ItemStyle-BorderStyle="Solid" />
-                                                                    <asp:BoundField HeaderText="Total Respondents" DataField="Total Respondents" ItemStyle-BorderStyle="Solid" />
+                                                                   <%-- <asp:BoundField HeaderText="Kinesis Project Name" DataField="Kinesis Project Name"
+                                                                        ItemStyle-BorderStyle="Solid" />--%>
                                                                     <asp:BoundField HeaderText="Kinesis Project Id" DataField="Kinesis Project Id" ItemStyle-BorderStyle="Solid" />
-                                                                    <asp:BoundField HeaderText="Length of the Survey" DataField="Length of the Survey"
-                                                                        ItemStyle-BorderStyle="Solid" />
-                                                                    <asp:BoundField HeaderText="Completes Count" DataField="Completes Count" ItemStyle-BorderStyle="Solid" />
+                                                                    <asp:BoundField HeaderText="Length of the Survey" DataField="Length of the Survey" ItemStyle-BorderStyle="Solid" />
+                                                                     <asp:BoundField HeaderText="Query Id" DataField="queryId" ItemStyle-BorderStyle="Solid" />
+                                                                    <asp:BoundField HeaderText="Total Respondents" DataField="Total Respondents" ItemStyle-BorderStyle="Solid" />
+                                                                    <asp:BoundField HeaderText="Create Date" DataField="Create Date" ItemStyle-BorderStyle="Solid" />
+                                                                    <asp:BoundField HeaderText="InActivated Date" DataField="InactiveDate" ItemStyle-BorderStyle="Solid" />
+                                                                    <asp:BoundField HeaderText="Status" DataField="Project Status" ItemStyle-BorderStyle="Solid" />
+                                                                    <asp:BoundField HeaderText="Speciality Id" DataField="SpecialityId" ItemStyle-BorderStyle="Solid" />
+                                                                    <asp:BoundField HeaderText="SpecialityOptionName" DataField="SpecialityOptionName" ItemStyle-BorderStyle="Solid" />
+                                                                    <asp:BoundField HeaderText="Sample Ratio" DataField="SampleRatio" ItemStyle-BorderStyle="Solid" />
+                                                                    <asp:BoundField HeaderText="Group" DataField="CompleteGroup" ItemStyle-BorderStyle="Solid" />
+                                                                    <asp:BoundField HeaderText="Requested N" DataField="ReqN" ItemStyle-BorderStyle="Solid" />
+                                                                    <asp:BoundField HeaderText="Completes Hono A/B/C/D" DataField="HonoCompletes" ItemStyle-BorderStyle="Solid" />                                                                    
                                                                     <asp:BoundField HeaderText="Quota Count" DataField="Quota Count" ItemStyle-BorderStyle="Solid" />
                                                                     <asp:BoundField HeaderText="Terminate Count" DataField="Terminate Count" ItemStyle-BorderStyle="Solid" />
                                                                     <asp:BoundField HeaderText="Total Clicks" DataField="Total Clicks" ItemStyle-BorderStyle="Solid" />
-                                                                    <asp:BoundField HeaderText="Create Date" DataField="Create Date" ItemStyle-BorderStyle="Solid" />
-                                                                    <asp:BoundField HeaderText="Incidence" DataField="Incidence" ItemStyle-BorderStyle="Solid" />                                                                  
-                                                                    <asp:BoundField HeaderText="Status" DataField="Project Status" ItemStyle-BorderStyle="Solid" />
-                                                                    <asp:BoundField HeaderText="InActivated Date" DataField="InactiveDate" ItemStyle-BorderStyle="Solid" />
+                                                                    <asp:BoundField HeaderText="Incidence" DataField="Incidence" ItemStyle-BorderStyle="Solid" /> 
+                                                                                                                                     
                                                                     <asp:TemplateField HeaderText="Close Project" HeaderStyle-HorizontalAlign="Center"
-                                                                        ItemStyle-HorizontalAlign="Center">
+                                                                        ItemStyle-HorizontalAlign="Center" >
                                                                         <ItemTemplate>
                                                                             <asp:HiddenField ID="hdnProjectId" runat="server" Value='<%# Bind("ProjectId")%>' />
                                                                             <asp:CheckBox ID="chkClose" runat="server" ToolTip="Close" />
                                                                             <%--<asp:ImageButton ID="imgClose" runat="server" CommandName="Close" ToolTip="Close" ImageUrl="~/images/close.gif"  CommandArgument='<%# Eval("Project Id")%>' />--%>
                                                                         </ItemTemplate>
                                                                     </asp:TemplateField>
-                                                                    <asp:TemplateField HeaderText="Query Details" HeaderStyle-HorizontalAlign="Center"
-                                                                        ItemStyle-HorizontalAlign="Center">
+                                                                     <asp:TemplateField HeaderText="Query Details" HeaderStyle-HorizontalAlign="Center"
+                                                                        ItemStyle-HorizontalAlign="Center" Visible="false">
                                                                         <ItemTemplate>
                                                                             <a href="JavaScript:divexpandcollapse('div<%# Eval("ProjectId") %>');">
                                                                                 <img alt="Details" id="imgdiv<%# Eval("ProjectId") %>" src="images/plus.png" />
@@ -243,10 +249,10 @@
                                                                                     <AlternatingRowStyle  BackColor="#F8F8F8" />
                                                                                     <RowStyle  BackColor="#D0D0D0 " />
                                                                                     <Columns>
-                                                                                        <asp:BoundField HeaderText="Honorarium Rate Level" DataField="HonorariumRateLevel" ItemStyle-BorderStyle="Solid" />
+                                                                                      <asp:BoundField HeaderText="Honorarium Rate Level" DataField="HonorariumRateLevel" ItemStyle-BorderStyle="Solid" />
                                                                                         <asp:BoundField HeaderText="Completes Count" DataField="Completes Count" ItemStyle-BorderStyle="Solid" />
-                                                                                     
-                                                                                          <%-- <asp:BoundField HeaderText="Query Id" DataField="QueryId" ItemStyle-BorderStyle="Solid" />
+                                                                                   
+                                                                                         <%--  <asp:BoundField HeaderText="Query Id" DataField="QueryId" ItemStyle-BorderStyle="Solid" />
                                                                                         <asp:BoundField HeaderText="Total Respondents" DataField="Total Respondents" ItemStyle-BorderStyle="Solid" />
                                                                                         <asp:BoundField HeaderText="Completes Count" DataField="Completes Count" ItemStyle-BorderStyle="Solid" />
                                                                                         <asp:BoundField HeaderText="Quota Count" DataField="Quota Count" ItemStyle-BorderStyle="Solid" />
@@ -257,8 +263,8 @@
                                                                                         <asp:BoundField HeaderText="Specialty" DataField="SpecialityOptionName" ItemStyle-BorderStyle="Solid" />
                                                                                         <asp:BoundField HeaderText="Sample Ratio" DataField="SampleRatio" ItemStyle-BorderStyle="Solid" />
                                                                                         <asp:BoundField HeaderText="Group" DataField="CompleteGroup" ItemStyle-BorderStyle="Solid" />
-                                                                                        <asp:BoundField HeaderText="Requested N" DataField="ReqN" ItemStyle-BorderStyle="Solid" />--%>
-                                                                                    </Columns>
+                                                                                        <asp:BoundField HeaderText="Requested N" DataField="ReqN" ItemStyle-BorderStyle="Solid" />
+                                                                             --%>       </Columns>
                                                                                 </asp:GridView>
                                                                                 </div>
                                                                         </ItemTemplate>

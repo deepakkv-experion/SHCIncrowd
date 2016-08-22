@@ -13,4 +13,5 @@ E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalAPI\bin\SCHUniversalAPI.
 E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalAPI\bin\SCHUniversalAPI.pdb
 E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalAPI\obj\Debug\SCHUniversalAPI.dll
 E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalAPI\obj\Debug\SCHUniversalAPI.pdb
-E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalAPI\obj\Debug\SCHUniversalAPI.csprojResolveAssemblyReference.cache
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalAPI\obj\Debug\SCHUniversalAPI.Resource.Resource.resources
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalAPI\obj\Debug\SCHUniversalAPI.csproj.GenerateResource.Cache

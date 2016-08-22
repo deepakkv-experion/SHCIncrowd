@@ -1,0 +1,5 @@
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalReportAndImport\bin\SCHUniversalReportAndImport.dll.config
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalReportAndImport\bin\SCHUniversalReportAndImport.dll
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalReportAndImport\bin\SCHUniversalReportAndImport.pdb
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalReportAndImport\obj\Release\SCHUniversalReportAndImport.dll
+E:\Projects\SCHUniversalAPI\SCHUniversalAPI\SCHUniversalReportAndImport\obj\Release\SCHUniversalReportAndImport.pdb
